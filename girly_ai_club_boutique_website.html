@@ -1,0 +1,2250 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Girly AI Club 🎀 — Your Pretty Little Corner of AI Magic ♡</title>
+  <meta name="description" content="Discover creative AI prompts, explore digital resources, and get inspired by AI drama content inside The Girly AI Creator Vault for a one-time payment of ₱400." />
+  
+  <!-- Google Fonts: Playfair Display (Headings), Poppins (Body/Buttons), Sacramento (Script) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Poppins:wght@300;400;500;600;700&family=Sacramento&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Configure Tailwind Brand Tokens -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            babyPink: '#FCE7F3',
+            blushPink: '#FFF1F7',
+            rosePink: '#F4A7C5',
+            hotPink: '#E7549B',
+            deepRose: '#A62C67',
+            softLavender: '#E9D5FF',
+            boutiqueText: '#493342',
+          },
+          fontFamily: {
+            heading: ['"Playfair Display"', 'serif'],
+            body: ['"Poppins"', 'sans-serif'],
+            script: ['"Sacramento"', 'cursive'],
+          },
+          boxShadow: {
+            coquette: '0 10px 30px -5px rgba(231, 84, 155, 0.14), 0 4px 12px -2px rgba(244, 167, 197, 0.2)',
+            coquetteHover: '0 18px 35px -5px rgba(231, 84, 155, 0.24), 0 6px 16px -3px rgba(166, 44, 103, 0.15)',
+            pearl: 'inset 0 2px 5px rgba(255, 255, 255, 0.9), 0 4px 10px rgba(231, 84, 155, 0.18)',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: #493342;
+      background-color: #FFF1F7;
+      overflow-x: hidden;
+    }
+
+    /* Subtle Coquette Dot & Sparkle Background Pattern */
+    .bg-coquette-pattern {
+      background-color: #FFF1F7;
+      background-image: 
+        radial-gradient(#F4A7C5 1.1px, transparent 1.1px), 
+        radial-gradient(#FCE7F3 1.5px, #FFF1F7 1.5px);
+      background-size: 36px 36px;
+      background-position: 0 0, 18px 18px;
+    }
+
+    /* Delicate Lace & Ribbon Borders */
+    .coquette-card {
+      background: rgba(255, 255, 255, 0.94);
+      border: 1.5px solid #F4A7C5;
+      box-shadow: 0 10px 30px -5px rgba(231, 84, 155, 0.12);
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .coquette-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 18px 35px -5px rgba(231, 84, 155, 0.22);
+      border-color: #E7549B;
+    }
+
+    /* Boutique Primary Button */
+    .btn-coquette-primary {
+      background: linear-gradient(135deg, #E7549B 0%, #d43d86 50%, #A62C67 100%);
+      color: #FFFFFF;
+      box-shadow: 0 8px 20px -4px rgba(231, 84, 155, 0.45), inset 0 1px 2px rgba(255, 255, 255, 0.4);
+      transition: all 0.25s ease;
+    }
+
+    .btn-coquette-primary:hover:not(:disabled) {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 24px -4px rgba(166, 44, 103, 0.55), inset 0 1px 2px rgba(255, 255, 255, 0.6);
+      filter: brightness(1.03);
+    }
+
+    .btn-coquette-primary:active:not(:disabled) {
+      transform: translateY(0px);
+    }
+
+    /* Boutique Secondary Button */
+    .btn-coquette-secondary {
+      background: #FFFFFF;
+      color: #A62C67;
+      border: 1.5px solid #F4A7C5;
+      box-shadow: 0 4px 12px rgba(244, 167, 197, 0.2);
+      transition: all 0.25s ease;
+    }
+
+    .btn-coquette-secondary:hover {
+      background: #FCE7F3;
+      border-color: #E7549B;
+      color: #A62C67;
+      transform: translateY(-2px);
+    }
+
+    /* Gentle Floating Animations */
+    @keyframes floatSlow {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-7px) rotate(1deg); }
+    }
+
+    @keyframes floatDelayed {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-5px) rotate(-1.5deg); }
+    }
+
+    @keyframes twinkle {
+      0%, 100% { opacity: 0.4; transform: scale(0.9); }
+      50% { opacity: 1; transform: scale(1.12); }
+    }
+
+    .animate-float-slow {
+      animation: floatSlow 4.5s ease-in-out infinite;
+    }
+
+    .animate-float-delayed {
+      animation: floatDelayed 5.2s ease-in-out 1.2s infinite;
+    }
+
+    .animate-twinkle {
+      animation: twinkle 3s ease-in-out infinite;
+    }
+
+    /* Pearl Divider */
+    .pearl-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 9999px;
+      background: radial-gradient(circle at 30% 30%, #FFFFFF, #FCE7F3 60%, #F4A7C5 100%);
+      box-shadow: 0 1px 3px rgba(166, 44, 103, 0.2);
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #FFF1F7;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #F4A7C5;
+      border-radius: 9999px;
+      border: 2px solid #FFF1F7;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #E7549B;
+    }
+  </style>
+</head>
+<body class="bg-coquette-pattern min-h-screen flex flex-col selection:bg-rosePink selection:text-deepRose">
+
+  <!-- =========================================================================
+       16. CENTRALIZED WEBSITE CONFIGURATION (EDITABLE BY SELLER)
+       ========================================================================= -->
+  <script>
+    /**
+     * =========================================================================
+     * GIRLY AI CLUB 🎀 — SELLER CONFIGURATION AREA
+     * =========================================================================
+     * Update the values below with your official details before publishing.
+     * IMPORTANT SECURITY NOTE:
+     * Never place your private Google Drive resource link in public frontend code!
+     * Always verify GCash payments manually first, then send your Google Drive
+     * link directly to confirmed buyers via Facebook Messenger.
+     */
+    const SITE_CONFIG = {
+      BRAND_NAME: "Girly AI Club",
+      PRODUCT_NAME: "The Girly AI Creator Vault",
+      PRODUCT_PRICE: 400,
+      CURRENCY: "PHP",
+      PAYMENT_METHOD: "GCash Manual Payment",
+      GCASH_NUMBER: "09675075601",
+      GCASH_ACCOUNT_NAME: "Jhun Mark Premacio",
+      MESSENGER_URL: "[INSERT YOUR OFFICIAL MESSENGER LINK]",
+      FACEBOOK_URL: "[INSERT YOUR FACEBOOK PAGE]",
+      TIKTOK_URL: "[INSERT YOUR TIKTOK PROFILE]",
+      INSTAGRAM_URL: "[INSERT YOUR INSTAGRAM PROFILE]",
+      SUPPORT_EMAIL: "[INSERT YOUR SUPPORT EMAIL]",
+      CREATOR_NAME: "[INSERT CREATOR NAME]",
+      CREATOR_ROLE: "Founder & AI Prompt Curator",
+      CREATOR_PHOTO_URL: "", // Optional URL for profile image; uses cute illustrated portrait if blank
+      CREATOR_BIO: "I'm passionate about AI creativity, digital resources, and helping beginners discover new ways to create with technology. Girly AI Club is a little space to explore prompts, find inspiration, and begin your creative journey with confidence.",
+      AFFILIATE_DISCLOSURE_ENABLED: true
+      // NOTE: GOOGLE_DRIVE_RESOURCE_URL = "[PRIVATE RESOURCE LINK — FOR SELLER USE ONLY]"
+      // Keep your Google Drive link stored securely in your private notes/Messenger saved replies!
+    };
+  </script>
+
+  <!-- =========================================================================
+       TOP ANNOUNCEMENT RIBBON
+       ========================================================================= -->
+  <div class="bg-gradient-to-r from-babyPink via-white to-softLavender border-b border-rosePink/40 py-2 px-4 text-center text-xs sm:text-sm font-medium text-deepRose relative z-40">
+    <div class="max-w-6xl mx-auto flex items-center justify-center gap-2 flex-wrap">
+      <span>🎀</span>
+      <span><strong class="font-semibold">The Girly AI Creator Vault</strong> — One-Time Payment of <span class="underline decoration-hotPink font-bold">₱400 PHP</span> via GCash</span>
+      <span class="hidden sm:inline">•</span>
+      <button onclick="navigateToView('checkout')" class="text-hotPink hover:text-deepRose font-semibold underline underline-offset-2 transition">
+        Get Instant Instructions →
+      </button>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       STICKY NAVIGATION BAR
+       ========================================================================= -->
+  <header class="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-rosePink/40 shadow-sm">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-18 sm:h-20 flex items-center justify-between py-3">
+      
+      <!-- Brand Logo -->
+      <button onclick="navigateToView('home')" class="flex items-center gap-2.5 text-left group focus:outline-none" aria-label="Girly AI Club Home">
+        <div class="w-10 h-10 rounded-2xl bg-gradient-to-br from-babyPink to-rosePink/60 border border-rosePink flex items-center justify-center shadow-pearl group-hover:scale-105 transition">
+          <!-- Coquette Bow SVG Icon -->
+          <svg class="w-6 h-6 text-deepRose" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M32 30C24 16 8 14 8 26C8 36 22 36 32 32Z" fill="#E7549B" stroke="#A62C67" stroke-width="2.5" stroke-linejoin="round"/>
+            <path d="M32 30C40 16 56 14 56 26C56 36 42 36 32 32Z" fill="#E7549B" stroke="#A62C67" stroke-width="2.5" stroke-linejoin="round"/>
+            <path d="M29 33L18 52L25 49L28 55L32 35" fill="#F4A7C5" stroke="#A62C67" stroke-width="2.5" stroke-linejoin="round"/>
+            <path d="M35 33L46 52L39 49L36 55L32 35" fill="#F4A7C5" stroke="#A62C67" stroke-width="2.5" stroke-linejoin="round"/>
+            <circle cx="32" cy="31" r="4.5" fill="#FFF1F7" stroke="#A62C67" stroke-width="2.5"/>
+          </svg>
+        </div>
+        <div>
+          <span class="font-heading font-bold text-xl sm:text-2xl text-deepRose tracking-tight flex items-center gap-1">
+            <span class="brand-name-display">Girly AI Club</span>
+            <span class="text-base">🎀</span>
+          </span>
+          <span class="block text-[10px] sm:text-xs text-boutiqueText/75 -mt-1 font-medium">Pretty Prompts & AI Magic ♡</span>
+        </div>
+      </button>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="hidden lg:flex items-center gap-7 text-sm font-medium text-boutiqueText" aria-label="Main Navigation">
+        <button onclick="navigateToSection('home', 'top')" class="hover:text-hotPink transition py-1">Home</button>
+        <button onclick="navigateToSection('home', 'the-vault')" class="hover:text-hotPink transition py-1">The Vault</button>
+        <button onclick="navigateToSection('home', 'whats-inside')" class="hover:text-hotPink transition py-1">What's Inside</button>
+        <button onclick="navigateToSection('home', 'how-it-works')" class="hover:text-hotPink transition py-1">How It Works</button>
+        <button onclick="navigateToSection('home', 'about')" class="hover:text-hotPink transition py-1">About</button>
+        <button onclick="navigateToSection('home', 'faq')" class="hover:text-hotPink transition py-1">FAQ</button>
+      </nav>
+
+      <!-- Right CTA & Mobile Menu Toggle -->
+      <div class="flex items-center gap-2.5 sm:gap-3">
+        <button onclick="navigateToView('checkout')" class="btn-coquette-primary text-xs sm:text-sm font-semibold px-4 sm:px-5 py-2.5 rounded-full flex items-center gap-1.5 whitespace-nowrap">
+          <span>Get Access</span>
+          <span class="bg-white/25 px-2 py-0.5 rounded-full text-white font-bold price-display">₱400</span>
+        </button>
+
+        <!-- Mobile Hamburger Button -->
+        <button id="mobile-menu-btn" onclick="toggleMobileMenu()" class="lg:hidden p-2.5 rounded-xl bg-babyPink/70 border border-rosePink text-deepRose hover:bg-babyPink focus:outline-none" aria-label="Open Navigation Menu" aria-expanded="false">
+          <svg id="hamburger-icon" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+          <svg id="close-menu-icon" class="w-5 h-5 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M6 18L18 6M6 6l12 12"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-white/95 backdrop-blur-md border-b-2 border-rosePink px-6 py-5 shadow-coquette">
+      <div class="flex flex-col space-y-3 text-sm font-medium text-boutiqueText">
+        <button onclick="navigateToSection('home', 'top'); closeMobileMenu();" class="text-left py-2 border-b border-babyPink hover:text-hotPink flex items-center justify-between">
+          <span>Home</span><span>♡</span>
+        </button>
+        <button onclick="navigateToSection('home', 'the-vault'); closeMobileMenu();" class="text-left py-2 border-b border-babyPink hover:text-hotPink flex items-center justify-between">
+          <span>The Vault</span><span>🎀</span>
+        </button>
+        <button onclick="navigateToSection('home', 'whats-inside'); closeMobileMenu();" class="text-left py-2 border-b border-babyPink hover:text-hotPink flex items-center justify-between">
+          <span>What's Inside</span><span>✨</span>
+        </button>
+        <button onclick="navigateToSection('home', 'how-it-works'); closeMobileMenu();" class="text-left py-2 border-b border-babyPink hover:text-hotPink flex items-center justify-between">
+          <span>How It Works</span><span>💌</span>
+        </button>
+        <button onclick="navigateToSection('home', 'about'); closeMobileMenu();" class="text-left py-2 border-b border-babyPink hover:text-hotPink flex items-center justify-between">
+          <span>About the Creator</span><span>🌸</span>
+        </button>
+        <button onclick="navigateToSection('home', 'faq'); closeMobileMenu();" class="text-left py-2 border-b border-babyPink hover:text-hotPink flex items-center justify-between">
+          <span>FAQ</span><span>💬</span>
+        </button>
+        <button onclick="navigateToSection('home', 'contact'); closeMobileMenu();" class="text-left py-2 border-b border-babyPink hover:text-hotPink flex items-center justify-between">
+          <span>Contact & Support</span><span>💗</span>
+        </button>
+        <div class="pt-2">
+          <button onclick="navigateToView('checkout'); closeMobileMenu();" class="w-full btn-coquette-primary py-3 rounded-full font-semibold text-center flex items-center justify-center gap-2">
+            <span>GET ACCESS — <span class="price-display">₱400</span></span>
+            <span>🎀</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       MAIN CONTENT AREA (MULTI-VIEW SPA)
+       ========================================================================= -->
+  <main class="flex-grow" id="top">
+
+    <!-- =======================================================================
+         VIEW 1: HOMEPAGE BOUTIQUE
+         ======================================================================= -->
+    <div id="view-home" class="block">
+
+      <!-- 3. HOMEPAGE HERO SECTION -->
+      <section class="relative overflow-hidden pt-8 pb-16 sm:pt-14 sm:pb-24 px-4 sm:px-6 lg:px-8">
+        <!-- Decorative Background Glows -->
+        <div class="absolute top-6 left-1/4 w-72 h-72 bg-babyPink rounded-full mix-blend-multiply filter blur-3xl opacity-70 pointer-events-none"></div>
+        <div class="absolute bottom-6 right-1/4 w-80 h-80 bg-softLavender rounded-full mix-blend-multiply filter blur-3xl opacity-60 pointer-events-none"></div>
+
+        <div class="max-w-6xl mx-auto relative z-10">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center">
+            
+            <!-- Left Hero Copy (7 cols) -->
+            <div class="lg:col-span-7 text-center lg:text-left">
+              <!-- Small Decorative Label -->
+              <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/90 border border-rosePink shadow-sm mb-5">
+                <span class="text-xs sm:text-sm font-semibold tracking-wider text-deepRose">
+                  ♡ WELCOME TO YOUR FAVORITE AI CLUB ♡
+                </span>
+              </div>
+
+              <!-- Main Headline -->
+              <h1 class="font-heading text-4xl sm:text-5xl lg:text-6xl font-bold text-deepRose leading-[1.15] mb-4">
+                Your Pretty Little Corner of <span class="italic text-hotPink font-normal">AI Magic</span> 🎀
+              </h1>
+
+              <!-- Script Accent Sub-line -->
+              <p class="font-script text-2xl sm:text-3xl text-hotPink mb-3">
+                Pretty Prompts. Creative Possibilities. Endless Inspiration.
+              </p>
+
+              <!-- Supporting Paragraph -->
+              <p class="text-base sm:text-lg text-boutiqueText/90 leading-relaxed max-w-2xl mx-auto lg:mx-0 mb-8">
+                Discover creative AI prompts, explore digital resources, and get inspired by AI drama content—all inside one cute little corner of the internet.
+              </p>
+
+              <!-- Primary & Secondary CTA Buttons -->
+              <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 mb-8">
+                <button onclick="navigateToView('checkout')" class="w-full sm:w-auto btn-coquette-primary text-base sm:text-lg font-semibold px-8 py-4 rounded-full flex items-center justify-center gap-2.5">
+                  <span>GET ACCESS — <span class="price-display">₱400</span></span>
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                  </svg>
+                </button>
+                <button onclick="navigateToSection('home', 'the-vault')" class="w-full sm:w-auto btn-coquette-secondary text-base font-semibold px-7 py-4 rounded-full flex items-center justify-center gap-2">
+                  <span>EXPLORE THE VAULT</span>
+                  <span>✨</span>
+                </button>
+              </div>
+
+              <!-- Three Small Benefit Labels -->
+              <div class="flex flex-wrap items-center justify-center lg:justify-start gap-2.5 sm:gap-3">
+                <span class="inline-flex items-center gap-1.5 text-xs sm:text-sm font-medium bg-white/85 border border-rosePink/70 text-boutiqueText px-3.5 py-1.5 rounded-full shadow-sm">
+                  <span class="text-hotPink">🎀</span> AI Prompt Collection
+                </span>
+                <span class="inline-flex items-center gap-1.5 text-xs sm:text-sm font-medium bg-white/85 border border-rosePink/70 text-boutiqueText px-3.5 py-1.5 rounded-full shadow-sm">
+                  <span class="text-hotPink">✨</span> Creative Resources
+                </span>
+                <span class="inline-flex items-center gap-1.5 text-xs sm:text-sm font-medium bg-white/85 border border-rosePink/70 text-boutiqueText px-3.5 py-1.5 rounded-full shadow-sm">
+                  <span class="text-hotPink">🎬</span> AI Drama Inspiration
+                </span>
+              </div>
+            </div>
+
+            <!-- Right Hero Illustration (5 cols) -->
+            <div class="lg:col-span-5 relative">
+              <div class="relative mx-auto max-w-md lg:max-w-none">
+                <!-- Decorative Frame Card -->
+                <div class="coquette-card rounded-[2rem] p-5 sm:p-6 bg-gradient-to-b from-white via-blushPink to-babyPink/60 relative overflow-visible">
+                  
+                  <!-- Top Coquette Bow Badge on Illustration Frame -->
+                  <div class="absolute -top-6 left-1/2 -translate-x-1/2 z-20 drop-shadow-md">
+                    <svg class="w-16 h-12" viewBox="0 0 100 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M50 32C34 8 6 10 8 30C10 46 34 44 50 36Z" fill="#E7549B" stroke="#A62C67" stroke-width="3"/>
+                      <path d="M50 32C66 8 94 10 92 30C90 46 66 44 50 36Z" fill="#E7549B" stroke="#A62C67" stroke-width="3"/>
+                      <path d="M45 36L24 64L36 60L42 68L50 38" fill="#F4A7C5" stroke="#A62C67" stroke-width="3" stroke-linejoin="round"/>
+                      <path d="M55 36L76 64L64 60L58 68L50 38" fill="#F4A7C5" stroke="#A62C67" stroke-width="3" stroke-linejoin="round"/>
+                      <circle cx="50" cy="34" r="7" fill="#FFF1F7" stroke="#A62C67" stroke-width="3"/>
+                    </svg>
+                  </div>
+
+                  <!-- Floating Prompt Card 1 (Top Left) -->
+                  <div class="hidden sm:flex absolute -left-5 top-10 z-20 bg-white border border-rosePink rounded-2xl px-3.5 py-2.5 shadow-coquette items-center gap-2.5 animate-float-slow">
+                    <span class="w-8 h-8 rounded-xl bg-babyPink flex items-center justify-center text-sm">💌</span>
+                    <div class="text-left">
+                      <p class="text-[11px] font-bold text-deepRose leading-tight">Prompt #01</p>
+                      <p class="text-[10px] text-boutiqueText/75">Coquette Content Ideas ✨</p>
+                    </div>
+                  </div>
+
+                  <!-- Floating Prompt Card 2 (Bottom Right) -->
+                  <div class="hidden sm:flex absolute -right-4 bottom-12 z-20 bg-white border border-rosePink rounded-2xl px-3.5 py-2.5 shadow-coquette items-center gap-2.5 animate-float-delayed">
+                    <span class="w-8 h-8 rounded-xl bg-softLavender/60 flex items-center justify-center text-sm">🎬</span>
+                    <div class="text-left">
+                      <p class="text-[11px] font-bold text-deepRose leading-tight">AI Drama Corner</p>
+                      <p class="text-[10px] text-boutiqueText/75">Storytelling & Scripts 💗</p>
+                    </div>
+                  </div>
+
+                  <!-- Custom SVG Hero Illustration: Pastel Pink Laptop, Floating Docs, Coffee Cup & Sparkles -->
+                  <div class="w-full pt-3">
+                    <svg class="w-full h-auto drop-shadow-sm" viewBox="0 0 420 340" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration of a pastel pink laptop, floating AI prompt cards, cute digital documents, a pink latte cup, and coquette bows">
+                      <!-- Soft Background Halo -->
+                      <circle cx="210" cy="170" r="135" fill="#FCE7F3" fill-opacity="0.7"/>
+                      <circle cx="265" cy="120" r="65" fill="#E9D5FF" fill-opacity="0.45"/>
+
+                      <!-- Sparkles & Tiny Hearts -->
+                      <path class="animate-twinkle" d="M68 72L72 82L82 86L72 90L68 100L64 90L54 86L64 82L68 72Z" fill="#E7549B"/>
+                      <path class="animate-twinkle" d="M356 64L359 72L367 75L359 78L356 86L353 78L345 75L353 72L356 64Z" fill="#A62C67"/>
+                      <path d="M105 48C102 43 94 44 94 50C94 56 105 62 105 62C105 62 116 56 116 50C116 44 108 43 105 48Z" fill="#F4A7C5"/>
+                      <path d="M335 140C333 136 327 137 327 141C327 146 335 150 335 150C335 150 343 146 343 141C343 137 337 136 335 140Z" fill="#E7549B"/>
+
+                      <!-- Floating Digital Document (Top Left Behind Laptop) -->
+                      <g transform="rotate(-8 85 110)">
+                        <rect x="48" y="95" width="76" height="94" rx="10" fill="#FFFFFF" stroke="#F4A7C5" stroke-width="2.5"/>
+                        <rect x="60" y="110" width="38" height="7" rx="3.5" fill="#E7549B"/>
+                        <rect x="60" y="124" width="52" height="5" rx="2.5" fill="#FCE7F3"/>
+                        <rect x="60" y="135" width="46" height="5" rx="2.5" fill="#FCE7F3"/>
+                        <rect x="60" y="146" width="50" height="5" rx="2.5" fill="#FCE7F3"/>
+                        <circle cx="98" cy="168" r="9" fill="#FFF1F7" stroke="#E7549B" stroke-width="1.5"/>
+                        <path d="M95 168L97.5 170.5L102 165.5" stroke="#A62C67" stroke-width="2" stroke-linecap="round"/>
+                      </g>
+
+                      <!-- Floating Prompt Folder (Top Right Behind Laptop) -->
+                      <g transform="rotate(7 325 100)">
+                        <rect x="282" y="72" width="84" height="64" rx="10" fill="#FFF1F7" stroke="#E7549B" stroke-width="2.5"/>
+                        <path d="M282 84C282 77.3726 287.373 72 294 72H314L322 82H356C361.523 82 366 86.4772 366 92V126C366 131.523 361.523 136 356 136H292C286.477 136 282 131.523 282 126V84Z" fill="#FFFFFF" stroke="#F4A7C5" stroke-width="2"/>
+                        <rect x="296" y="96" width="54" height="6" rx="3" fill="#F4A7C5"/>
+                        <rect x="296" y="108" width="40" height="6" rx="3" fill="#FCE7F3"/>
+                      </g>
+
+                      <!-- Pastel Pink Laptop Screen -->
+                      <rect x="96" y="88" width="216" height="142" rx="14" fill="#F4A7C5" stroke="#A62C67" stroke-width="3"/>
+                      <rect x="106" y="98" width="196" height="122" rx="8" fill="#FFF1F7" stroke="#F4A7C5" stroke-width="1.5"/>
+                      <!-- Laptop Camera Dot -->
+                      <circle cx="204" cy="93" r="2" fill="#A62C67"/>
+
+                      <!-- Screen Content: Boutique UI Inside Laptop -->
+                      <rect x="116" y="108" width="176" height="22" rx="6" fill="#FCE7F3"/>
+                      <circle cx="126" cy="119" r="3.5" fill="#E7549B"/>
+                      <circle cx="136" cy="119" r="3.5" fill="#F4A7C5"/>
+                      <circle cx="146" cy="119" r="3.5" fill="#E9D5FF"/>
+                      <text x="166" y="123" fill="#A62C67" font-family="Poppins, sans-serif" font-size="9" font-weight="600">Girly AI Vault 🎀</text>
+
+                      <!-- Mini Prompt Cards Inside Laptop Screen -->
+                      <rect x="116" y="138" width="84" height="72" rx="8" fill="#FFFFFF" stroke="#F4A7C5" stroke-width="1.5"/>
+                      <rect x="124" y="147" width="45" height="6" rx="3" fill="#E7549B"/>
+                      <rect x="124" y="159" width="66" height="5" rx="2.5" fill="#FCE7F3"/>
+                      <rect x="124" y="169" width="56" height="5" rx="2.5" fill="#FCE7F3"/>
+                      <rect x="124" y="185" width="48" height="14" rx="7" fill="#FCE7F3"/>
+
+                      <rect x="208" y="138" width="84" height="72" rx="8" fill="#FFFFFF" stroke="#F4A7C5" stroke-width="1.5"/>
+                      <rect x="216" y="147" width="52" height="6" rx="3" fill="#A62C67"/>
+                      <rect x="216" y="159" width="66" height="5" rx="2.5" fill="#E9D5FF"/>
+                      <rect x="216" y="169" width="58" height="5" rx="2.5" fill="#FCE7F3"/>
+                      <rect x="216" y="185" width="48" height="14" rx="7" fill="#E7549B"/>
+
+                      <!-- Laptop Keyboard Base -->
+                      <path d="M74 230H334L352 254C354.5 257.5 352 262 347.5 262H60.5C56 262 53.5 257.5 56 254L74 230Z" fill="#FCE7F3" stroke="#A62C67" stroke-width="3" stroke-linejoin="round"/>
+                      <path d="M104 236H304L312 248H96L104 236Z" fill="#F4A7C5"/>
+                      <rect x="182" y="252" width="44" height="5" rx="2.5" fill="#A62C67"/>
+
+                      <!-- Cute Pink Coffee / Strawberry Matcha Cup (Bottom Right Foreground) -->
+                      <g transform="translate(296, 195)">
+                        <!-- Saucer -->
+                        <ellipse cx="44" cy="70" rx="36" ry="8" fill="#FCE7F3" stroke="#A62C67" stroke-width="2.5"/>
+                        <!-- Cup Handle -->
+                        <path d="M68 34H76C82 34 86 39 86 45C86 51 82 56 76 56H66" stroke="#A62C67" stroke-width="3" fill="none"/>
+                        <!-- Cup Body -->
+                        <path d="M16 26H72L66 62C65 67 60 70 55 70H33C28 70 23 67 22 62L16 26Z" fill="#FFF1F7" stroke="#A62C67" stroke-width="2.5"/>
+                        <!-- Pink Drink Rim -->
+                        <ellipse cx="44" cy="26" rx="28" ry="6" fill="#F4A7C5" stroke="#A62C67" stroke-width="2"/>
+                        <!-- Tiny Heart on Cup -->
+                        <path d="M44 44C42 40 36 41 36 45C36 49 44 54 44 54C44 54 52 49 52 45C52 41 46 40 44 44Z" fill="#E7549B"/>
+                        <!-- Steam Swirls -->
+                        <path d="M36 14C36 9 41 9 41 4" stroke="#F4A7C5" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M50 16C50 11 55 11 55 6" stroke="#F4A7C5" stroke-width="2" stroke-linecap="round"/>
+                      </g>
+
+                      <!-- Pearl Strand Accent (Bottom Left) -->
+                      <circle cx="52" cy="272" r="6" fill="#FFFFFF" stroke="#F4A7C5" stroke-width="1.5"/>
+                      <circle cx="66" cy="277" r="5" fill="#FFFFFF" stroke="#F4A7C5" stroke-width="1.5"/>
+                      <circle cx="79" cy="279" r="4.5" fill="#FFFFFF" stroke="#F4A7C5" stroke-width="1.5"/>
+                    </svg>
+                  </div>
+
+                  <!-- Bottom Mini Price Tag Strip inside Hero Card -->
+                  <div class="mt-3 pt-3 border-t border-rosePink/50 flex items-center justify-between text-xs sm:text-sm">
+                    <span class="font-medium text-boutiqueText flex items-center gap-1.5">
+                      <span class="w-2.5 h-2.5 rounded-full bg-hotPink inline-block"></span>
+                      The Girly AI Creator Vault
+                    </span>
+                    <span class="font-bold text-deepRose bg-babyPink px-3 py-1 rounded-full border border-rosePink">
+                      <span class="price-display">₱400</span> • One-Time
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Decorative Pearl & Bow Section Divider -->
+      <div class="max-w-4xl mx-auto px-6 flex items-center justify-center gap-3 my-2">
+        <div class="h-[1.5px] bg-gradient-to-r from-transparent via-rosePink to-hotPink/50 flex-grow"></div>
+        <div class="pearl-dot"></div>
+        <span class="text-hotPink text-lg">🎀</span>
+        <div class="pearl-dot"></div>
+        <div class="h-[1.5px] bg-gradient-to-l from-transparent via-rosePink to-hotPink/50 flex-grow"></div>
+      </div>
+
+      <!-- 4. FEATURED PRODUCT — THE AI CREATOR VAULT -->
+      <section id="the-vault" class="py-16 sm:py-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto">
+          
+          <!-- Section Header -->
+          <div class="text-center max-w-2xl mx-auto mb-12">
+            <span class="text-xs font-bold uppercase tracking-widest text-hotPink bg-babyPink px-4 py-1.5 rounded-full border border-rosePink">
+              ♡ Featured Digital Collection ♡
+            </span>
+            <h2 class="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-deepRose mt-4 mb-3">
+              The Girly AI Creator Vault 🎀
+            </h2>
+            <p class="text-boutiqueText/85 text-base sm:text-lg">
+              Your digital collection of AI prompts and creative resources, curated to help you explore AI tools and create with more confidence.
+            </p>
+          </div>
+
+          <!-- Main Product Showcase Card -->
+          <div class="coquette-card rounded-[2.25rem] p-6 sm:p-10 lg:p-12 bg-white relative overflow-hidden">
+            <!-- Top Corner Ribbon Decoration -->
+            <div class="absolute -right-12 top-7 rotate-45 bg-gradient-to-r from-hotPink to-deepRose text-white text-xs font-bold py-1.5 px-14 shadow-md">
+              ONE-TIME PAYMENT
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+              
+              <!-- Product Cover Mockup (5 cols) -->
+              <div class="lg:col-span-5">
+                <div class="bg-gradient-to-br from-blushPink via-babyPink/70 to-softLavender/50 rounded-3xl p-6 sm:p-8 border-2 border-rosePink shadow-inner relative">
+                  <!-- Digital Binder / Vault Cover Illustration -->
+                  <div class="bg-white rounded-2xl p-6 border-2 border-rosePink shadow-coquette relative mx-auto max-w-xs">
+                    <!-- Binder Rings Left -->
+                    <div class="absolute -left-3 top-8 flex flex-col gap-6">
+                      <span class="w-6 h-3 rounded-full bg-gradient-to-r from-rosePink to-hotPink border border-deepRose block"></span>
+                      <span class="w-6 h-3 rounded-full bg-gradient-to-r from-rosePink to-hotPink border border-deepRose block"></span>
+                      <span class="w-6 h-3 rounded-full bg-gradient-to-r from-rosePink to-hotPink border border-deepRose block"></span>
+                      <span class="w-6 h-3 rounded-full bg-gradient-to-r from-rosePink to-hotPink border border-deepRose block"></span>
+                    </div>
+
+                    <div class="text-center pl-2">
+                      <span class="inline-block text-[10px] font-bold tracking-widest uppercase text-hotPink bg-blushPink px-3 py-1 rounded-full border border-rosePink/60 mb-3">
+                        Digital Google Drive Vault
+                      </span>
+                      <!-- Cute Bow Illustration -->
+                      <div class="w-16 h-12 mx-auto mb-2 flex items-center justify-center">
+                        <svg class="w-14 h-10" viewBox="0 0 100 70" fill="none">
+                          <path d="M50 32C34 8 6 10 8 30C10 46 34 44 50 36Z" fill="#F4A7C5" stroke="#A62C67" stroke-width="3"/>
+                          <path d="M50 32C66 8 94 10 92 30C90 46 66 44 50 36Z" fill="#F4A7C5" stroke="#A62C67" stroke-width="3"/>
+                          <path d="M45 36L26 62L37 58L42 66L50 38" fill="#E7549B" stroke="#A62C67" stroke-width="3"/>
+                          <path d="M55 36L74 62L63 58L58 66L50 38" fill="#E7549B" stroke="#A62C67" stroke-width="3"/>
+                          <circle cx="50" cy="34" r="6" fill="#FFF1F7" stroke="#A62C67" stroke-width="3"/>
+                        </svg>
+                      </div>
+                      <h3 class="font-heading font-bold text-2xl text-deepRose leading-snug mb-1 product-name-display">
+                        The Girly AI Creator Vault
+                      </h3>
+                      <p class="font-script text-xl text-hotPink mb-4">
+                        Curated by Girly AI Club ♡
+                      </p>
+
+                      <!-- Mini Resource Tags on Mockup -->
+                      <div class="space-y-2 text-left text-xs bg-blushPink/80 p-3.5 rounded-xl border border-rosePink/60">
+                        <div class="flex items-center gap-2 text-boutiqueText font-medium">
+                          <span class="text-hotPink">✓</span> AI Prompt Library
+                        </div>
+                        <div class="flex items-center gap-2 text-boutiqueText font-medium">
+                          <span class="text-hotPink">✓</span> Content Creator Prompts
+                        </div>
+                        <div class="flex items-center gap-2 text-boutiqueText font-medium">
+                          <span class="text-hotPink">✓</span> AI Drama Corner Resources
+                        </div>
+                        <div class="flex items-center gap-2 text-boutiqueText font-medium">
+                          <span class="text-hotPink">✓</span> Beginner-Friendly Guides
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Price Floating Sticker -->
+                  <div class="mt-5 bg-white/95 rounded-2xl p-4 border border-rosePink flex items-center justify-between shadow-sm">
+                    <div>
+                      <span class="text-xs uppercase tracking-wider text-boutiqueText/70 font-semibold block">Complete Collection</span>
+                      <span class="text-sm font-bold text-deepRose">One-Time Payment</span>
+                    </div>
+                    <div class="text-right">
+                      <span class="font-heading text-3xl font-bold text-hotPink price-display">₱400</span>
+                      <span class="block text-[10px] text-boutiqueText/70">No recurring fees</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product Details & Benefits (7 cols) -->
+              <div class="lg:col-span-7">
+                <div class="inline-flex items-center gap-2 bg-babyPink/80 border border-rosePink px-4 py-1.5 rounded-full text-xs sm:text-sm font-bold text-deepRose mb-4">
+                  <span>✨ <span class="price-display">₱400</span> — One-Time Payment</span>
+                  <span>•</span>
+                  <span>No Subscription</span>
+                </div>
+
+                <h3 class="font-heading text-2xl sm:text-3xl font-bold text-deepRose mb-3">
+                  Everything Included in Your Vault Access:
+                </h3>
+                <p class="text-sm sm:text-base text-boutiqueText/85 mb-6">
+                  Designed for beginners and digital creators who want structured prompts, content ideas, and included AI drama inspiration in one organized Google Drive folder.
+                </p>
+
+                <!-- 4 Key Benefit Blocks (Items 1 to 8 from prompt) -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+                  
+                  <!-- Benefit 1 & 2 -->
+                  <div class="bg-blushPink/70 border border-rosePink/80 rounded-2xl p-4 hover:bg-babyPink/40 transition">
+                    <div class="flex items-center gap-2.5 mb-1.5">
+                      <span class="w-8 h-8 rounded-xl bg-white border border-rosePink flex items-center justify-center text-base shadow-sm">🎀</span>
+                      <h4 class="font-bold text-deepRose text-sm sm:text-base">1. AI Prompt Library</h4>
+                    </div>
+                    <p class="text-xs sm:text-sm text-boutiqueText/85 leading-relaxed">
+                      A collection of prompts for brainstorming, writing, creative projects, and compatible AI tools.
+                    </p>
+                  </div>
+
+                  <!-- Benefit 3 & 4 -->
+                  <div class="bg-blushPink/70 border border-rosePink/80 rounded-2xl p-4 hover:bg-babyPink/40 transition">
+                    <div class="flex items-center gap-2.5 mb-1.5">
+                      <span class="w-8 h-8 rounded-xl bg-white border border-rosePink flex items-center justify-center text-base shadow-sm">💗</span>
+                      <h4 class="font-bold text-deepRose text-sm sm:text-base">2. Content Creator Prompts</h4>
+                    </div>
+                    <p class="text-xs sm:text-sm text-boutiqueText/85 leading-relaxed">
+                      Ideas for social media captions, content planning, storytelling, and short-form videos.
+                    </p>
+                  </div>
+
+                  <!-- Benefit 5 & 6 -->
+                  <div class="bg-blushPink/70 border border-rosePink/80 rounded-2xl p-4 hover:bg-babyPink/40 transition">
+                    <div class="flex items-center gap-2.5 mb-1.5">
+                      <span class="w-8 h-8 rounded-xl bg-white border border-rosePink flex items-center justify-center text-base shadow-sm">🎬</span>
+                      <h4 class="font-bold text-deepRose text-sm sm:text-base">3. AI Drama Corner</h4>
+                    </div>
+                    <p class="text-xs sm:text-sm text-boutiqueText/85 leading-relaxed">
+                      Access to the free AI drama resources included in the advertised collection.
+                    </p>
+                  </div>
+
+                  <!-- Benefit 7 & 8 -->
+                  <div class="bg-blushPink/70 border border-rosePink/80 rounded-2xl p-4 hover:bg-babyPink/40 transition">
+                    <div class="flex items-center gap-2.5 mb-1.5">
+                      <span class="w-8 h-8 rounded-xl bg-white border border-rosePink flex items-center justify-center text-base shadow-sm">✨</span>
+                      <h4 class="font-bold text-deepRose text-sm sm:text-base">4. Beginner-Friendly Resources</h4>
+                    </div>
+                    <p class="text-xs sm:text-sm text-boutiqueText/85 leading-relaxed">
+                      Guides and helpful instructions for exploring the included prompts and digital materials.
+                    </p>
+                  </div>
+
+                </div>
+
+                <!-- CTA Action Box -->
+                <div class="bg-gradient-to-r from-babyPink/70 via-blushPink to-softLavender/40 rounded-2xl p-5 border border-rosePink flex flex-col sm:flex-row items-center justify-between gap-4">
+                  <div>
+                    <div class="flex items-baseline gap-2">
+                      <span class="font-heading text-3xl font-bold text-deepRose price-display">₱400</span>
+                      <span class="text-xs font-semibold uppercase tracking-wide text-hotPink bg-white px-2.5 py-0.5 rounded-full border border-rosePink">One-Time Payment</span>
+                    </div>
+                    <p class="text-xs text-boutiqueText/80 mt-1">
+                      Pay easily via GCash • Delivered via Facebook Messenger
+                    </p>
+                  </div>
+
+                  <button onclick="navigateToView('checkout')" class="w-full sm:w-auto btn-coquette-primary font-semibold text-base px-8 py-4 rounded-full flex items-center justify-center gap-2 whitespace-nowrap">
+                    <span>GET MY ACCESS</span>
+                    <span>🎀</span>
+                  </button>
+                </div>
+
+                <!-- Transparency Note -->
+                <p class="text-xs text-boutiqueText/75 mt-4 flex items-start gap-2 leading-relaxed">
+                  <span class="text-hotPink font-bold">💌 Note:</span>
+                  <span>Access to the Google Drive collection is delivered manually through Facebook Messenger after we verify your ₱400 GCash payment. Your purchase includes the specific files inside the advertised Google Drive folder.</span>
+                </p>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- 5. WHAT'S INSIDE THE VAULT -->
+      <section id="whats-inside" class="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-white/60 border-y border-rosePink/40">
+        <div class="max-w-6xl mx-auto">
+          
+          <div class="text-center max-w-2xl mx-auto mb-12">
+            <span class="text-xs font-bold uppercase tracking-widest text-deepRose bg-babyPink px-4 py-1.5 rounded-full border border-rosePink">
+              ♡ Peek Inside the Collection ♡
+            </span>
+            <h2 class="font-heading text-3xl sm:text-4xl font-bold text-deepRose mt-4 mb-3">
+              What's Inside The Vault ✨
+            </h2>
+            <p class="text-boutiqueText/85 text-base">
+              Four thoughtfully organized sections inside our Google Drive collection to spark your creativity.
+            </p>
+          </div>
+
+          <!-- 4 Attractive Coquette Product Cards -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
+            
+            <!-- CARD 1: AI PROMPT LIBRARY -->
+            <div class="coquette-card rounded-3xl p-6 flex flex-col justify-between bg-gradient-to-b from-white to-blushPink/60">
+              <div>
+                <div class="w-16 h-16 rounded-2xl bg-babyPink border border-rosePink flex items-center justify-center mb-5 shadow-sm">
+                  <!-- Custom Illustration: Ribbon Notebook -->
+                  <svg class="w-9 h-9" viewBox="0 0 48 48" fill="none">
+                    <rect x="10" y="6" width="28" height="36" rx="4" fill="#FFF1F7" stroke="#A62C67" stroke-width="2.2"/>
+                    <path d="M16 16H32M16 23H32M16 30H26" stroke="#E7549B" stroke-width="2.2" stroke-linecap="round"/>
+                    <circle cx="24" cy="11" r="2" fill="#A62C67"/>
+                  </svg>
+                </div>
+                <h3 class="font-heading font-bold text-xl text-deepRose mb-2.5">
+                  AI PROMPT LIBRARY 🎀
+                </h3>
+                <p class="text-sm text-boutiqueText/85 leading-relaxed">
+                  Explore curated prompts for brainstorming, writing, idea generation, and AI-assisted creative work.
+                </p>
+              </div>
+              <div class="mt-6 pt-3 border-t border-rosePink/40 flex items-center justify-between text-xs font-semibold text-hotPink">
+                <span>Included in Vault</span>
+                <span>♡ 01</span>
+              </div>
+            </div>
+
+            <!-- CARD 2: CONTENT CREATOR KIT -->
+            <div class="coquette-card rounded-3xl p-6 flex flex-col justify-between bg-gradient-to-b from-white to-blushPink/60">
+              <div>
+                <div class="w-16 h-16 rounded-2xl bg-babyPink border border-rosePink flex items-center justify-center mb-5 shadow-sm">
+                  <!-- Custom Illustration: Social Heart Frame -->
+                  <svg class="w-9 h-9" viewBox="0 0 48 48" fill="none">
+                    <rect x="8" y="10" width="32" height="28" rx="6" fill="#FFF1F7" stroke="#A62C67" stroke-width="2.2"/>
+                    <path d="M24 20C21.5 16.5 16 17.5 16 22C16 26.5 24 31 24 31C24 31 32 26.5 32 22C32 17.5 26.5 16.5 24 20Z" fill="#E7549B" stroke="#A62C67" stroke-width="1.8"/>
+                  </svg>
+                </div>
+                <h3 class="font-heading font-bold text-xl text-deepRose mb-2.5">
+                  CONTENT CREATOR KIT 💗
+                </h3>
+                <p class="text-sm text-boutiqueText/85 leading-relaxed">
+                  Find inspiration for captions, social media posts, short-form video concepts, and content planning.
+                </p>
+              </div>
+              <div class="mt-6 pt-3 border-t border-rosePink/40 flex items-center justify-between text-xs font-semibold text-hotPink">
+                <span>Included in Vault</span>
+                <span>♡ 02</span>
+              </div>
+            </div>
+
+            <!-- CARD 3: AI DRAMA CORNER -->
+            <div class="coquette-card rounded-3xl p-6 flex flex-col justify-between bg-gradient-to-b from-white to-blushPink/60">
+              <div>
+                <div class="w-16 h-16 rounded-2xl bg-babyPink border border-rosePink flex items-center justify-center mb-5 shadow-sm">
+                  <!-- Custom Illustration: Clapperboard with Heart -->
+                  <svg class="w-9 h-9" viewBox="0 0 48 48" fill="none">
+                    <rect x="8" y="16" width="32" height="24" rx="4" fill="#FFF1F7" stroke="#A62C67" stroke-width="2.2"/>
+                    <path d="M8 16L10 9L40 9L38 16H8Z" fill="#F4A7C5" stroke="#A62C67" stroke-width="2.2" stroke-linejoin="round"/>
+                    <path d="M21 24L29 28L21 32V24Z" fill="#E7549B" stroke="#A62C67" stroke-width="1.8" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <h3 class="font-heading font-bold text-xl text-deepRose mb-2.5">
+                  AI DRAMA CORNER 🎬
+                </h3>
+                <p class="text-sm text-boutiqueText/85 leading-relaxed">
+                  Explore included free AI drama resources and creative inspiration for AI-assisted storytelling.
+                </p>
+              </div>
+              <div class="mt-6 pt-3 border-t border-rosePink/40 flex items-center justify-between text-xs font-semibold text-hotPink">
+                <span>Included in Vault</span>
+                <span>♡ 03</span>
+              </div>
+            </div>
+
+            <!-- CARD 4: DIGITAL CREATOR STARTER KIT -->
+            <div class="coquette-card rounded-3xl p-6 flex flex-col justify-between bg-gradient-to-b from-white to-blushPink/60">
+              <div>
+                <div class="w-16 h-16 rounded-2xl bg-babyPink border border-rosePink flex items-center justify-center mb-5 shadow-sm">
+                  <!-- Custom Illustration: Sparkle Wand & Guide -->
+                  <svg class="w-9 h-9" viewBox="0 0 48 48" fill="none">
+                    <path d="M24 8L26.8 16.2L35 19L26.8 21.8L24 30L21.2 21.8L13 19L21.2 16.2L24 8Z" fill="#E7549B" stroke="#A62C67" stroke-width="2" stroke-linejoin="round"/>
+                    <circle cx="34" cy="33" r="4" fill="#F4A7C5" stroke="#A62C67" stroke-width="1.8"/>
+                    <circle cx="14" cy="34" r="3" fill="#E9D5FF" stroke="#A62C67" stroke-width="1.8"/>
+                  </svg>
+                </div>
+                <h3 class="font-heading font-bold text-xl text-deepRose mb-2.5">
+                  DIGITAL CREATOR STARTER KIT ✨
+                </h3>
+                <p class="text-sm text-boutiqueText/85 leading-relaxed">
+                  Discover beginner-friendly resources that help you organize ideas and experiment with digital creativity.
+                </p>
+              </div>
+              <div class="mt-6 pt-3 border-t border-rosePink/40 flex items-center justify-between text-xs font-semibold text-hotPink">
+                <span>Included in Vault</span>
+                <span>♡ 04</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Important Third-Party Tool & Resource Transparency Disclaimer -->
+          <div class="bg-blushPink border border-rosePink rounded-2xl p-4 sm:p-5 text-xs sm:text-sm text-boutiqueText/90 flex items-start gap-3 max-w-4xl mx-auto">
+            <span class="text-lg">🌸</span>
+            <p class="leading-relaxed">
+              <strong class="text-deepRose">What to Know About External AI Tools:</strong> Your ₱400 purchase gives you access to the curated prompt collections, guides, and free AI drama resources inside our Google Drive vault. Please note that third-party AI platforms or external software services mentioned or used alongside these prompts are operated independently and may have their own separate pricing, account requirements, or usage restrictions.
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- 6. HOW IT WORKS -->
+      <section id="how-it-works" class="py-16 sm:py-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto">
+          
+          <div class="text-center max-w-2xl mx-auto mb-14">
+            <span class="text-xs font-bold uppercase tracking-widest text-hotPink bg-babyPink px-4 py-1.5 rounded-full border border-rosePink">
+              ♡ Simple 3-Step Process ♡
+            </span>
+            <h2 class="font-heading text-3xl sm:text-4xl font-bold text-deepRose mt-4 mb-3">
+              How It Works 🎀
+            </h2>
+            <p class="text-boutiqueText/85 text-base">
+              No complicated accounts or automatic subscriptions. Just a simple GCash transfer and quick receipt check on Messenger!
+            </p>
+          </div>
+
+          <!-- 3 Steps Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
+            
+            <!-- STEP 1: CHOOSE YOUR VAULT (Pink Shopping Bag Illustration) -->
+            <div class="coquette-card rounded-3xl p-7 text-center relative bg-white">
+              <div class="w-10 h-10 rounded-full bg-hotPink text-white font-bold text-sm flex items-center justify-center mx-auto -mt-11 mb-4 shadow-md border-2 border-white">
+                1
+              </div>
+              <!-- Pink Shopping Bag SVG -->
+              <div class="w-24 h-24 mx-auto mb-5 rounded-full bg-blushPink border border-rosePink flex items-center justify-center">
+                <svg class="w-14 h-14" viewBox="0 0 64 64" fill="none" aria-label="Pink shopping bag illustration">
+                  <path d="M16 22H48L45 52C44.7 54.5 42.5 56 40 56H24C21.5 56 19.3 54.5 19 52L16 22Z" fill="#FCE7F3" stroke="#A62C67" stroke-width="2.5" stroke-linejoin="round"/>
+                  <path d="M24 22V17C24 12.5 27.5 9 32 9C36.5 9 40 12.5 40 17V22" stroke="#A62C67" stroke-width="2.5" stroke-linecap="round"/>
+                  <path d="M32 33C29.5 29.5 24 30.5 24 35C24 39.5 32 44 32 44C32 44 40 39.5 40 35C40 30.5 34.5 29.5 32 33Z" fill="#E7549B" stroke="#A62C67" stroke-width="2"/>
+                </svg>
+              </div>
+              <h3 class="font-heading font-bold text-xl text-deepRose mb-2">
+                STEP 1 — CHOOSE YOUR VAULT
+              </h3>
+              <p class="text-sm text-boutiqueText/85 leading-relaxed">
+                Click the Get Access button to see the ₱400 payment instructions.
+              </p>
+            </div>
+
+            <!-- STEP 2: PAY THROUGH GCASH (GCash Payment Phone Illustration) -->
+            <div class="coquette-card rounded-3xl p-7 text-center relative bg-white">
+              <div class="w-10 h-10 rounded-full bg-hotPink text-white font-bold text-sm flex items-center justify-center mx-auto -mt-11 mb-4 shadow-md border-2 border-white">
+                2
+              </div>
+              <!-- GCash Payment Phone SVG -->
+              <div class="w-24 h-24 mx-auto mb-5 rounded-full bg-blushPink border border-rosePink flex items-center justify-center">
+                <svg class="w-14 h-14" viewBox="0 0 64 64" fill="none" aria-label="GCash payment phone illustration">
+                  <rect x="18" y="8" width="28" height="48" rx="6" fill="#FFFFFF" stroke="#A62C67" stroke-width="2.5"/>
+                  <rect x="22" y="14" width="20" height="32" rx="3" fill="#FCE7F3"/>
+                  <circle cx="32" cy="27" r="6" fill="#E7549B"/>
+                  <path d="M29.5 27L31.2 28.8L35 25" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <rect x="26" y="37" width="12" height="4" rx="2" fill="#A62C67"/>
+                  <circle cx="32" cy="51" r="2" fill="#A62C67"/>
+                </svg>
+              </div>
+              <h3 class="font-heading font-bold text-xl text-deepRose mb-2">
+                STEP 2 — PAY THROUGH GCASH
+              </h3>
+              <p class="text-sm text-boutiqueText/85 leading-relaxed">
+                Send ₱400 to the GCash number displayed on the checkout page, then message your payment receipt through our official Facebook Messenger account.
+              </p>
+            </div>
+
+            <!-- STEP 3: GET YOUR ACCESS (Pink Envelope with Bow Illustration) -->
+            <div class="coquette-card rounded-3xl p-7 text-center relative bg-white">
+              <div class="w-10 h-10 rounded-full bg-hotPink text-white font-bold text-sm flex items-center justify-center mx-auto -mt-11 mb-4 shadow-md border-2 border-white">
+                3
+              </div>
+              <!-- Pink Envelope Containing a Bow SVG -->
+              <div class="w-24 h-24 mx-auto mb-5 rounded-full bg-blushPink border border-rosePink flex items-center justify-center">
+                <svg class="w-14 h-14" viewBox="0 0 64 64" fill="none" aria-label="Pink envelope containing a bow illustration">
+                  <rect x="10" y="18" width="44" height="32" rx="5" fill="#FCE7F3" stroke="#A62C67" stroke-width="2.5"/>
+                  <path d="M11 20L32 36L53 20" stroke="#A62C67" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <!-- Mini Coquette Bow Seal -->
+                  <path d="M32 34C27 27 19 28 20 34C21 39 28 38 32 35Z" fill="#E7549B" stroke="#A62C67" stroke-width="2"/>
+                  <path d="M32 34C37 27 45 28 44 34C43 39 36 38 32 35Z" fill="#E7549B" stroke="#A62C67" stroke-width="2"/>
+                  <circle cx="32" cy="34.5" r="2.5" fill="#FFF1F7" stroke="#A62C67" stroke-width="1.8"/>
+                </svg>
+              </div>
+              <h3 class="font-heading font-bold text-xl text-deepRose mb-2">
+                STEP 3 — GET YOUR ACCESS
+              </h3>
+              <p class="text-sm text-boutiqueText/85 leading-relaxed">
+                After we manually verify your payment in our GCash account, we will send your Google Drive access instructions through Messenger.
+              </p>
+            </div>
+
+          </div>
+
+          <!-- Verification Note Banner -->
+          <div class="max-w-3xl mx-auto bg-white border-2 border-rosePink rounded-2xl p-5 text-center shadow-sm">
+            <p class="text-sm font-medium text-deepRose flex items-center justify-center gap-2 flex-wrap">
+              <span>⏳</span>
+              <span><strong>Important Note:</strong> Please allow time for manual payment verification. Sending a receipt does not automatically confirm payment.</span>
+            </p>
+            <div class="mt-4">
+              <button onclick="navigateToView('checkout')" class="btn-coquette-primary text-sm font-semibold px-7 py-3 rounded-full inline-flex items-center gap-2">
+                <span>PROCEED TO GCASH CHECKOUT — <span class="price-display">₱400</span></span>
+                <span>→</span>
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- 10. ABOUT THE CREATOR -->
+      <section id="about" class="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-babyPink/40 via-blushPink to-white border-t border-rosePink/40">
+        <div class="max-w-4xl mx-auto">
+          <div class="coquette-card rounded-[2.25rem] p-7 sm:p-12 bg-white relative">
+            
+            <!-- Cute Decorative Bow Header -->
+            <div class="flex justify-center -mt-12 mb-4">
+              <div class="bg-blushPink border-2 border-rosePink rounded-full px-5 py-2 shadow-sm flex items-center gap-2">
+                <span>🎀</span>
+                <span class="text-xs font-bold uppercase tracking-widest text-deepRose">Meet The Creator</span>
+                <span>🎀</span>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+              
+              <!-- Circular Photo Placeholder with Coquette Bow Frame (4 cols) -->
+              <div class="md:col-span-4 flex flex-col items-center">
+                <div class="relative w-40 h-40 sm:w-44 sm:h-44 rounded-full p-2 bg-gradient-to-tr from-hotPink via-rosePink to-softLavender shadow-coquette">
+                  <div class="w-full h-full rounded-full bg-blushPink border-4 border-white overflow-hidden flex items-center justify-center relative">
+                    <img id="creator-photo-img" src="" alt="Creator of Girly AI Club" class="w-full h-full object-cover hidden" onerror="this.classList.add('hidden'); document.getElementById('creator-avatar-svg').classList.remove('hidden');" />
+                    <!-- Default Coquette Avatar Placeholder SVG -->
+                    <svg id="creator-avatar-svg" class="w-28 h-28 text-deepRose" viewBox="0 0 100 100" fill="none" aria-label="Feminine creator avatar placeholder">
+                      <circle cx="50" cy="36" r="18" fill="#FCE7F3" stroke="#A62C67" stroke-width="3"/>
+                      <path d="M22 86C22 68 34 58 50 58C66 58 78 68 78 86" fill="#F4A7C5" stroke="#A62C67" stroke-width="3" stroke-linecap="round"/>
+                      <!-- Mini Bow in Hair -->
+                      <path d="M62 22C57 16 50 18 52 23C54 27 59 25 62 23Z" fill="#E7549B" stroke="#A62C67" stroke-width="2"/>
+                      <path d="M62 22C67 16 74 18 72 23C70 27 65 25 62 23Z" fill="#E7549B" stroke="#A62C67" stroke-width="2"/>
+                    </svg>
+                  </div>
+                  <!-- Bottom Bow Badge on Avatar -->
+                  <div class="absolute -bottom-2 left-1/2 -translate-x-1/2 bg-white border border-rosePink px-3 py-0.5 rounded-full shadow-sm text-xs font-bold text-hotPink whitespace-nowrap">
+                    ♡ Creator ♡
+                  </div>
+                </div>
+
+                <div class="text-center mt-4">
+                  <p id="creator-name-display" class="font-heading font-bold text-lg text-deepRose">Girly AI Club Creator</p>
+                  <p id="creator-role-display" class="text-xs text-boutiqueText/70">Founder & AI Prompt Curator</p>
+                </div>
+              </div>
+
+              <!-- Creator Story & Editable Social Links (8 cols) -->
+              <div class="md:col-span-8 text-center md:text-left">
+                <h2 class="font-heading text-2xl sm:text-3xl lg:text-4xl font-bold text-deepRose mb-4">
+                  Hi, Bestie! Welcome to Girly AI Club 💗
+                </h2>
+                <p id="creator-bio-display" class="text-sm sm:text-base text-boutiqueText/90 leading-relaxed mb-6">
+                  I'm passionate about AI creativity, digital resources, and helping beginners discover new ways to create with technology. Girly AI Club is a little space to explore prompts, find inspiration, and begin your creative journey with confidence.
+                </p>
+
+                <!-- Creator Social & Support Pills -->
+                <div class="pt-4 border-t border-rosePink/40">
+                  <p class="text-xs font-semibold uppercase tracking-wider text-deepRose/80 mb-3">
+                    Connect & Official Links:
+                  </p>
+                  <div class="flex flex-wrap items-center justify-center md:justify-start gap-2.5">
+                    <button onclick="handleSocialClick('FACEBOOK_URL', 'Facebook Page')" class="text-xs font-semibold bg-blushPink hover:bg-babyPink text-deepRose border border-rosePink px-3.5 py-2 rounded-full transition flex items-center gap-1.5">
+                      <span>🌸 Facebook Page</span>
+                      <span data-config-badge="FACEBOOK_URL" class="text-[10px] bg-white px-1.5 py-0.2 rounded-full text-boutiqueText/60"></span>
+                    </button>
+                    <button onclick="handleSocialClick('TIKTOK_URL', 'TikTok Account')" class="text-xs font-semibold bg-blushPink hover:bg-babyPink text-deepRose border border-rosePink px-3.5 py-2 rounded-full transition flex items-center gap-1.5">
+                      <span>🎀 TikTok</span>
+                      <span data-config-badge="TIKTOK_URL" class="text-[10px] bg-white px-1.5 py-0.2 rounded-full text-boutiqueText/60"></span>
+                    </button>
+                    <button onclick="handleSocialClick('INSTAGRAM_URL', 'Instagram Account')" class="text-xs font-semibold bg-blushPink hover:bg-babyPink text-deepRose border border-rosePink px-3.5 py-2 rounded-full transition flex items-center gap-1.5">
+                      <span>✨ Instagram</span>
+                      <span data-config-badge="INSTAGRAM_URL" class="text-[10px] bg-white px-1.5 py-0.2 rounded-full text-boutiqueText/60"></span>
+                    </button>
+                    <button onclick="navigateToSection('home', 'contact')" class="text-xs font-semibold bg-white hover:bg-babyPink text-hotPink border border-rosePink px-3.5 py-2 rounded-full transition flex items-center gap-1.5">
+                      <span>💌 Customer Support</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 11. FREQUENTLY ASKED QUESTIONS (INTERACTIVE ACCORDION) -->
+      <section id="faq" class="py-16 sm:py-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto">
+          
+          <div class="text-center mb-12">
+            <span class="text-xs font-bold uppercase tracking-widest text-hotPink bg-babyPink px-4 py-1.5 rounded-full border border-rosePink">
+              ♡ Got Questions, Bestie? ♡
+            </span>
+            <h2 class="font-heading text-3xl sm:text-4xl font-bold text-deepRose mt-4 mb-3">
+              Frequently Asked Questions 💬
+            </h2>
+            <p class="text-boutiqueText/85 text-base">
+              Everything you need to know about The Girly AI Creator Vault, GCash payment, and manual delivery.
+            </p>
+          </div>
+
+          <!-- Accordion Container -->
+          <div id="faq-accordion-container" class="space-y-3.5">
+            <!-- Populated by JavaScript for clean state management -->
+          </div>
+
+        </div>
+      </section>
+
+      <!-- 12. CONTACT AND SUPPORT SECTION -->
+      <section id="contact" class="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-white to-babyPink/50 border-t border-rosePink/40">
+        <div class="max-w-4xl mx-auto text-center">
+          <div class="coquette-card rounded-[2.25rem] p-8 sm:p-12 bg-white">
+            <div class="w-16 h-16 rounded-full bg-babyPink border border-rosePink flex items-center justify-center mx-auto mb-4 text-2xl shadow-sm">
+              💌
+            </div>
+            <h2 class="font-heading text-3xl sm:text-4xl font-bold text-deepRose mb-3">
+              Need a Little Help, Bestie? 💌
+            </h2>
+            <p class="text-boutiqueText/85 text-base sm:text-lg max-w-xl mx-auto mb-8">
+              We're happy to help with payment questions, receipt verification, and Google Drive access.
+            </p>
+
+            <!-- 4 Official Social / Support Action Buttons -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl mx-auto mb-6">
+              
+              <!-- Button 1: Message Us on Facebook -->
+              <button onclick="handleSocialClick('MESSENGER_URL', 'Facebook Messenger')" class="btn-coquette-primary py-3.5 px-6 rounded-2xl font-semibold text-sm flex items-center justify-between">
+                <span class="flex items-center gap-2">
+                  <span>💬</span>
+                  <span>Message Us on Facebook</span>
+                </span>
+                <span data-config-badge="MESSENGER_URL" class="text-[11px] bg-white/25 px-2.5 py-0.5 rounded-full"></span>
+              </button>
+
+              <!-- Button 2: Visit Our Facebook Page -->
+              <button onclick="handleSocialClick('FACEBOOK_URL', 'Facebook Page')" class="btn-coquette-secondary py-3.5 px-6 rounded-2xl font-semibold text-sm flex items-center justify-between">
+                <span class="flex items-center gap-2">
+                  <span>🌸</span>
+                  <span>Visit Our Facebook Page</span>
+                </span>
+                <span data-config-badge="FACEBOOK_URL" class="text-[11px] bg-babyPink px-2.5 py-0.5 rounded-full text-deepRose"></span>
+              </button>
+
+              <!-- Button 3: Follow Us on TikTok -->
+              <button onclick="handleSocialClick('TIKTOK_URL', 'TikTok Profile')" class="btn-coquette-secondary py-3.5 px-6 rounded-2xl font-semibold text-sm flex items-center justify-between">
+                <span class="flex items-center gap-2">
+                  <span>🎀</span>
+                  <span>Follow Us on TikTok</span>
+                </span>
+                <span data-config-badge="TIKTOK_URL" class="text-[11px] bg-babyPink px-2.5 py-0.5 rounded-full text-deepRose"></span>
+              </button>
+
+              <!-- Button 4: Follow Us on Instagram -->
+              <button onclick="handleSocialClick('INSTAGRAM_URL', 'Instagram Profile')" class="btn-coquette-secondary py-3.5 px-6 rounded-2xl font-semibold text-sm flex items-center justify-between">
+                <span class="flex items-center gap-2">
+                  <span>✨</span>
+                  <span>Follow Us on Instagram</span>
+                </span>
+                <span data-config-badge="INSTAGRAM_URL" class="text-[11px] bg-babyPink px-2.5 py-0.5 rounded-full text-deepRose"></span>
+              </button>
+
+            </div>
+
+            <!-- Support Email Display (if configured) -->
+            <p id="support-email-line" class="text-xs text-boutiqueText/75 mt-2"></p>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- =======================================================================
+         VIEW 2: MANUAL GCASH CHECKOUT & PAYMENT INSTRUCTIONS PAGE
+         ======================================================================= -->
+    <div id="view-checkout" class="hidden py-10 sm:py-14 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-4xl mx-auto">
+
+        <!-- Back to Homepage Button -->
+        <div class="mb-6 flex items-center justify-between flex-wrap gap-3">
+          <button onclick="navigateToView('home')" class="inline-flex items-center gap-2 text-sm font-semibold text-deepRose hover:text-hotPink bg-white border border-rosePink px-4 py-2 rounded-full shadow-sm transition">
+            <span>← Back to Boutique Home</span>
+          </button>
+          <span class="text-xs font-medium text-boutiqueText/80 bg-babyPink/80 border border-rosePink px-3.5 py-1.5 rounded-full">
+            🔒 Manual GCash Checkout • No Account Required
+          </span>
+        </div>
+
+        <!-- Checkout Header Card -->
+        <div class="text-center mb-10">
+          <span class="inline-block text-xs font-bold uppercase tracking-widest text-hotPink bg-white px-4 py-1.5 rounded-full border border-rosePink shadow-sm mb-3">
+            ♡ Official GCash Payment & Receipt Page ♡
+          </span>
+          <h1 class="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-deepRose mb-3">
+            Your AI Creator Vault Is Waiting, Bestie! 💗
+          </h1>
+          <p class="text-boutiqueText/90 text-base sm:text-lg max-w-2xl mx-auto">
+            Complete your GCash payment and send your receipt to unlock your digital resources.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+
+          <!-- Left Column: Order Summary & GCash Details Card (5 cols) -->
+          <div class="lg:col-span-5 space-y-6">
+            
+            <!-- Order Summary Card -->
+            <div class="coquette-card rounded-3xl p-6 bg-white">
+              <div class="flex items-center justify-between border-b border-rosePink/50 pb-3 mb-4">
+                <h2 class="font-heading font-bold text-xl text-deepRose">Order Summary 🎀</h2>
+                <span class="text-xs font-bold bg-babyPink text-deepRose px-2.5 py-1 rounded-full border border-rosePink">Digital Access</span>
+              </div>
+
+              <div class="space-y-3 text-sm">
+                <div class="flex justify-between items-start gap-2">
+                  <span class="text-boutiqueText/75">Product:</span>
+                  <span class="font-semibold text-deepRose text-right product-name-display">The Girly AI Creator Vault</span>
+                </div>
+                <div class="flex justify-between items-center">
+                  <span class="text-boutiqueText/75">Payment type:</span>
+                  <span class="font-medium text-boutiqueText">One-time payment</span>
+                </div>
+                <div class="flex justify-between items-center">
+                  <span class="text-boutiqueText/75">Subscription:</span>
+                  <span class="text-xs font-semibold text-emerald-700 bg-emerald-50 border border-emerald-200 px-2.5 py-0.5 rounded-full">No recurring subscription</span>
+                </div>
+                <div class="pt-3 border-t border-rosePink/50 flex justify-between items-baseline">
+                  <span class="font-bold text-deepRose text-base">Total:</span>
+                  <span class="font-heading font-bold text-3xl text-hotPink"><span class="price-display">₱400</span> PHP</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Large Readable GCash Payment Information Card -->
+            <div class="coquette-card rounded-3xl p-6 sm:p-7 bg-gradient-to-b from-white via-blushPink to-babyPink/70 border-2 border-hotPink relative">
+              <div class="flex items-center justify-between mb-4">
+                <span class="text-xs font-bold uppercase tracking-wider text-white bg-hotPink px-3.5 py-1 rounded-full shadow-sm">
+                  GCash Transfer Details
+                </span>
+                <span class="text-lg">📱</span>
+              </div>
+
+              <div class="space-y-4">
+                <!-- GCash Number Box -->
+                <div class="bg-white rounded-2xl p-4 border border-rosePink shadow-sm">
+                  <span class="text-xs uppercase tracking-wider text-boutiqueText/70 font-semibold block mb-1">
+                    GCash Number:
+                  </span>
+                  <p id="gcash-number-display" class="font-mono text-2xl sm:text-3xl font-bold text-deepRose tracking-wider break-all">
+                    09675075601
+                  </p>
+                </div>
+
+                <!-- GCash Account Name Box -->
+                <div class="bg-white rounded-2xl p-4 border border-rosePink shadow-sm">
+                  <span class="text-xs uppercase tracking-wider text-boutiqueText/70 font-semibold block mb-1">
+                    GCash Account Name:
+                  </span>
+                  <p id="gcash-name-display" class="text-lg sm:text-xl font-bold text-deepRose">
+                    Jhun Mark Premacio
+                  </p>
+                </div>
+
+                <!-- Payment Amount Box -->
+                <div class="bg-white rounded-2xl p-4 border border-rosePink shadow-sm flex items-center justify-between">
+                  <span class="text-xs uppercase tracking-wider text-boutiqueText/70 font-semibold">
+                    Payment Amount:
+                  </span>
+                  <span class="font-heading text-2xl font-bold text-hotPink price-display">₱400</span>
+                </div>
+
+                <!-- COPY GCASH NUMBER BUTTON -->
+                <div>
+                  <button id="copy-gcash-btn" onclick="copyGCashNumber()" class="w-full btn-coquette-primary py-3.5 px-5 rounded-full font-semibold text-sm flex items-center justify-center gap-2">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/>
+                    </svg>
+                    <span id="copy-gcash-btn-text">COPY GCASH NUMBER</span>
+                  </button>
+                  <!-- Copy Confirmation Message -->
+                  <p id="copy-gcash-feedback" class="hidden text-center text-xs font-bold text-deepRose bg-white border border-rosePink rounded-full py-1.5 px-3 mt-2.5 shadow-sm">
+                    GCash number copied! 💗
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Security Reminder Card -->
+            <div class="bg-white border-2 border-rosePink rounded-2xl p-4 text-xs text-boutiqueText leading-relaxed shadow-sm">
+              <p class="font-bold text-deepRose mb-1 flex items-center gap-1.5">
+                <span>🔒</span>
+                <span>Important Security Reminder:</span>
+              </p>
+              <p>
+                Never share your GCash MPIN, OTP, password, or account login details with anyone. Girly AI Club will only ever ask for your payment receipt screenshot for verification.
+              </p>
+            </div>
+
+          </div>
+
+          <!-- Right Column: Step-by-Step Instructions & Messenger Submission (7 cols) -->
+          <div class="lg:col-span-7 space-y-6">
+
+            <!-- HOW TO PAY INSTRUCTIONS CARD -->
+            <div class="coquette-card rounded-3xl p-6 sm:p-8 bg-white">
+              <h2 class="font-heading text-2xl font-bold text-deepRose mb-4 flex items-center gap-2">
+                <span>HOW TO PAY 🎀</span>
+              </h2>
+
+              <ol class="space-y-3.5 text-sm sm:text-base text-boutiqueText">
+                <li class="flex items-start gap-3">
+                  <span class="w-6 h-6 rounded-full bg-babyPink border border-rosePink text-deepRose font-bold text-xs flex items-center justify-center flex-shrink-0 mt-0.5">1</span>
+                  <span>Open your <strong>GCash app</strong>.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="w-6 h-6 rounded-full bg-babyPink border border-rosePink text-deepRose font-bold text-xs flex items-center justify-center flex-shrink-0 mt-0.5">2</span>
+                  <span>Send exactly <strong class="text-hotPink price-display">₱400</strong> to the GCash number shown above (<code id="inline-gcash-num" class="bg-blushPink px-2 py-0.5 rounded font-bold text-deepRose">09675075601</code>).</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="w-6 h-6 rounded-full bg-babyPink border border-rosePink text-deepRose font-bold text-xs flex items-center justify-center flex-shrink-0 mt-0.5">3</span>
+                  <span>Check the recipient's account name (<strong id="inline-gcash-name" class="text-deepRose">Jhun Mark Premacio</strong>) before confirming.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="w-6 h-6 rounded-full bg-babyPink border border-rosePink text-deepRose font-bold text-xs flex items-center justify-center flex-shrink-0 mt-0.5">4</span>
+                  <span>Complete your payment.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="w-6 h-6 rounded-full bg-babyPink border border-rosePink text-deepRose font-bold text-xs flex items-center justify-center flex-shrink-0 mt-0.5">5</span>
+                  <span>Save your <strong>transaction receipt or screenshot</strong>.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="w-6 h-6 rounded-full bg-babyPink border border-rosePink text-deepRose font-bold text-xs flex items-center justify-center flex-shrink-0 mt-0.5">6</span>
+                  <span>Send your receipt to our <strong>official Facebook Messenger page</strong>.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="w-6 h-6 rounded-full bg-babyPink border border-rosePink text-deepRose font-bold text-xs flex items-center justify-center flex-shrink-0 mt-0.5">7</span>
+                  <span>Wait for us to verify the payment before receiving your <strong>Google Drive access link</strong>.</span>
+                </li>
+              </ol>
+            </div>
+
+            <!-- 8. SEND PAYMENT RECEIPT THROUGH MESSENGER -->
+            <div class="coquette-card rounded-3xl p-6 sm:p-8 bg-white">
+              <div class="flex items-center justify-between flex-wrap gap-2 mb-3">
+                <h2 class="font-heading text-2xl font-bold text-deepRose">
+                  Send Your Receipt on Messenger 💌
+                </h2>
+                <span class="text-xs font-semibold bg-babyPink text-deepRose px-3 py-1 rounded-full border border-rosePink">
+                  Step 2 of Checkout
+                </span>
+              </div>
+
+              <p class="text-xs sm:text-sm text-boutiqueText/85 mb-5 leading-relaxed">
+                Copy the message template below, click the Messenger button, paste the message, and <strong>attach your actual GCash receipt screenshot directly in our Messenger chat</strong>.
+              </p>
+
+              <!-- Optional Quick-Fill Helper Inputs (Purely fills the text box below so customer doesn't have to manually edit brackets if they want) -->
+              <div class="bg-blushPink/70 border border-rosePink/70 rounded-2xl p-4 mb-4">
+                <p class="text-xs font-semibold text-deepRose mb-2.5 flex items-center gap-1.5">
+                  <span>✨ Optional Helper:</span>
+                  <span class="font-normal text-boutiqueText/80">Type your name & GCash reference number below to auto-fill the message template before copying:</span>
+                </p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  <div>
+                    <label for="helper-buyer-name" class="block text-[11px] font-semibold text-boutiqueText/80 mb-1">Your Name</label>
+                    <input id="helper-buyer-name" type="text" oninput="updateSuggestedMessage()" placeholder="e.g., Maria Clara" class="w-full text-xs sm:text-sm px-3.5 py-2 rounded-xl border border-rosePink focus:outline-none focus:border-hotPink bg-white" />
+                  </div>
+                  <div>
+                    <label for="helper-ref-num" class="block text-[11px] font-semibold text-boutiqueText/80 mb-1">GCash Reference No.</label>
+                    <input id="helper-ref-num" type="text" oninput="updateSuggestedMessage()" placeholder="e.g., 1023 456 789012" class="w-full text-xs sm:text-sm px-3.5 py-2 rounded-xl border border-rosePink focus:outline-none focus:border-hotPink bg-white" />
+                  </div>
+                </div>
+                <p class="text-[11px] text-boutiqueText/70 mt-2">
+                  *Entering details here only updates the text box below for your convenience. It does not submit or verify your payment on this website.
+                </p>
+              </div>
+
+              <!-- Suggested Message Template Box -->
+              <div class="mb-4">
+                <div class="flex items-center justify-between mb-1.5">
+                  <span class="text-xs font-bold uppercase tracking-wider text-deepRose">Suggested Message for Messenger:</span>
+                  <button onclick="copySuggestedMessage()" class="text-xs font-bold text-hotPink hover:text-deepRose underline flex items-center gap-1">
+                    <span>Copy Text</span>
+                  </button>
+                </div>
+                <pre id="suggested-message-box" class="bg-blushPink border-2 border-rosePink rounded-2xl p-4 text-xs sm:text-sm font-body text-boutiqueText whitespace-pre-wrap leading-relaxed select-all">Hi, Girly AI Club! 🎀
+I've sent my ₱400 payment for The Girly AI Creator Vault.
+My name: [YOUR NAME]
+GCash transaction reference: [REFERENCE NUMBER]
+I'm sending my payment receipt for verification. Please let me know once my payment is confirmed and my Google Drive access is ready.
+Thank you! 💗</pre>
+              </div>
+
+              <!-- COPY MESSAGE BUTTON -->
+              <div class="mb-6">
+                <button onclick="copySuggestedMessage()" class="w-full btn-coquette-secondary py-3 px-5 rounded-full font-semibold text-sm flex items-center justify-center gap-2">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"/>
+                  </svg>
+                  <span>COPY MESSAGE</span>
+                </button>
+                <p id="copy-message-feedback" class="hidden text-center text-xs font-bold text-deepRose bg-babyPink border border-rosePink rounded-full py-1.5 px-3 mt-2">
+                  Suggested message copied! Paste it in Messenger with your receipt screenshot 💗
+                </p>
+              </div>
+
+              <!-- PRIMARY MESSENGER RECEIPT BUTTON -->
+              <div class="pt-2 border-t border-rosePink/50">
+                <a id="messenger-checkout-link" href="#" onclick="handleMessengerCheckoutClick(event)" class="w-full btn-coquette-primary py-4 px-6 rounded-full font-bold text-base sm:text-lg flex items-center justify-center gap-2.5 text-center shadow-lg">
+                  <span>I'VE PAID — SEND MY RECEIPT 💌</span>
+                </a>
+
+                <!-- Unconfigured Messenger Notice (Shown when MESSENGER_URL is still placeholder) -->
+                <div id="messenger-coming-soon-notice" class="mt-3 bg-blushPink border border-rosePink rounded-2xl p-3.5 text-center">
+                  <p class="text-xs sm:text-sm font-bold text-deepRose">
+                    Messenger link coming soon.
+                  </p>
+                  <p class="text-[11px] text-boutiqueText/80 mt-0.5">
+                    Seller Setup Note: Configure <code class="bg-white px-1.5 py-0.5 rounded border border-rosePink">MESSENGER_URL</code> in <button onclick="toggleSellerDrawer()" class="text-hotPink font-semibold underline">Seller Settings</button> to activate your live Facebook Messenger link.
+                  </p>
+                </div>
+
+                <p class="text-xs text-boutiqueText/80 text-center mt-3 leading-relaxed">
+                  📸 <strong>Don't forget:</strong> Clicking the button above opens Facebook Messenger. You must <strong>attach your actual GCash receipt screenshot</strong> directly inside our Messenger chat so we can verify your payment.
+                </p>
+              </div>
+            </div>
+
+            <!-- 9. PAYMENT VERIFICATION AND ACCESS DELIVERY STATUS BOX -->
+            <div class="bg-gradient-to-r from-babyPink via-blushPink to-softLavender/50 border-2 border-rosePink rounded-3xl p-6 sm:p-7 shadow-sm">
+              <div class="flex items-start gap-3.5">
+                <div class="w-11 h-11 rounded-2xl bg-white border border-rosePink flex items-center justify-center text-xl flex-shrink-0 shadow-sm">
+                  🎀
+                </div>
+                <div>
+                  <h3 class="font-heading font-bold text-xl text-deepRose mb-1.5">
+                    Your access is on its way! 🎀
+                  </h3>
+                  <p class="text-sm text-boutiqueText/90 leading-relaxed mb-3">
+                    Please send your payment receipt through Messenger. We'll check your payment and send your access instructions after confirmation.
+                  </p>
+                  <div class="bg-white/90 border border-rosePink/80 rounded-xl p-3 text-xs text-boutiqueText/85 space-y-1">
+                    <p>• <strong>Manual Verification:</strong> We independently check every transaction in our official GCash account before sending the Google Drive link.</p>
+                    <p>• <strong>Keep This Page Open:</strong> You can stay on or bookmark this page anytime to review the payment and Messenger instructions.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- =======================================================================
+         VIEW 3: LEGAL & TRANSPARENCY PAGES (PRIVACY, TERMS, REFUND)
+         ======================================================================= -->
+    <div id="view-legal" class="hidden py-12 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-4xl mx-auto">
+        
+        <div class="mb-6 flex items-center justify-between flex-wrap gap-3">
+          <button onclick="navigateToView('home')" class="inline-flex items-center gap-2 text-sm font-semibold text-deepRose hover:text-hotPink bg-white border border-rosePink px-4 py-2 rounded-full shadow-sm transition">
+            <span>← Back to Boutique Home</span>
+          </button>
+
+          <!-- Legal Page Switcher Tabs -->
+          <div class="flex flex-wrap gap-2">
+            <button onclick="openLegalPage('privacy')" id="tab-legal-privacy" class="text-xs font-semibold px-4 py-2 rounded-full border border-rosePink transition">
+              Privacy Policy
+            </button>
+            <button onclick="openLegalPage('terms')" id="tab-legal-terms" class="text-xs font-semibold px-4 py-2 rounded-full border border-rosePink transition">
+              Terms & Conditions
+            </button>
+            <button onclick="openLegalPage('refund')" id="tab-legal-refund" class="text-xs font-semibold px-4 py-2 rounded-full border border-rosePink transition">
+              Refund Policy
+            </button>
+          </div>
+        </div>
+
+        <!-- PRIVACY POLICY CONTENT -->
+        <article id="legal-content-privacy" class="coquette-card rounded-3xl p-7 sm:p-10 bg-white space-y-5">
+          <div class="border-b border-rosePink/50 pb-4">
+            <span class="text-xs font-bold uppercase tracking-wider text-hotPink">Customer Transparency & Data Care</span>
+            <h1 class="font-heading text-3xl sm:text-4xl font-bold text-deepRose mt-1">Privacy Policy 🎀</h1>
+            <p class="text-xs text-boutiqueText/70 mt-1">Effective for <span class="brand-name-display font-semibold">Girly AI Club</span></p>
+          </div>
+
+          <div class="space-y-4 text-sm text-boutiqueText/90 leading-relaxed">
+            <h2 class="font-heading font-bold text-lg text-deepRose">1. Information We Collect</h2>
+            <p>
+              <span class="brand-name-display font-semibold">Girly AI Club</span> operates a manual payment and digital fulfillment system. You do not need to create an account on this website to view our payment instructions. When you purchase <strong>The Girly AI Creator Vault (₱400)</strong> and message us on Facebook Messenger, we receive only the information necessary to verify your payment and deliver your access:
+            </p>
+            <ul class="list-disc pl-5 space-y-1">
+              <li>Your name and public Facebook Messenger profile used to contact us.</li>
+              <li>Your GCash payment receipt screenshot and GCash transaction reference number.</li>
+              <li>Your email address (only if required to grant or troubleshoot Google Drive folder access).</li>
+            </ul>
+
+            <h2 class="font-heading font-bold text-lg text-deepRose">2. What We Never Request</h2>
+            <p>
+              We will <strong>never</strong> request your GCash MPIN, One-Time Password (OTP), account password, bank login credentials, or sensitive government IDs. Any optional helper fields on our checkout page remain strictly inside your browser to help format your Messenger text and are never stored on a public database.
+            </p>
+
+            <h2 class="font-heading font-bold text-lg text-deepRose">3. How Payment Receipts & Personal Information Are Used</h2>
+            <p>
+              Your payment receipt screenshot and reference number are used strictly to:
+            </p>
+            <ul class="list-disc pl-5 space-y-1">
+              <li>Manually cross-check and verify that your ₱400 payment was received in our official GCash account.</li>
+              <li>Deliver your Google Drive access instructions via Facebook Messenger.</li>
+              <li>Provide customer support if you experience difficulty opening your Google Drive link.</li>
+            </ul>
+            <p>
+              We do not sell, rent, or publicly post your personal contact information or unredacted payment receipts.
+            </p>
+
+            <h2 class="font-heading font-bold text-lg text-deepRose">4. Contacting Support</h2>
+            <p>
+              For any privacy questions or support requests, please reach out through our official Facebook Messenger channel or contact section on this website.
+            </p>
+          </div>
+        </article>
+
+        <!-- TERMS AND CONDITIONS CONTENT -->
+        <article id="legal-content-terms" class="coquette-card rounded-3xl p-7 sm:p-10 bg-white space-y-5 hidden">
+          <div class="border-b border-rosePink/50 pb-4">
+            <span class="text-xs font-bold uppercase tracking-wider text-hotPink">Customer Agreement & Usage License</span>
+            <h1 class="font-heading text-3xl sm:text-4xl font-bold text-deepRose mt-1">Terms and Conditions 🎀</h1>
+            <p class="text-xs text-boutiqueText/70 mt-1">Effective for <span class="brand-name-display font-semibold">Girly AI Club</span></p>
+          </div>
+
+          <div class="space-y-4 text-sm text-boutiqueText/90 leading-relaxed">
+            <h2 class="font-heading font-bold text-lg text-deepRose">1. What You Receive for ₱400</h2>
+            <p>
+              Upon verified one-time payment of <strong>₱400 PHP</strong>, you receive access to <strong>The Girly AI Creator Vault</strong> hosted on Google Drive, which includes:
+            </p>
+            <ul class="list-disc pl-5 space-y-1">
+              <li>The curated AI Prompt Library and Content Creator Prompts included in the collection.</li>
+              <li>The free AI drama resources specifically included in the advertised bundle.</li>
+              <li>Beginner-friendly guides and starter instructions included in the folder.</li>
+            </ul>
+            <p>
+              This is a one-time purchase, not a recurring subscription. Only the digital materials inside our advertised Google Drive collection are included.
+            </p>
+
+            <h2 class="font-heading font-bold text-lg text-deepRose">2. Manual Payment Verification & Delivery</h2>
+            <p>
+              Payments are made manually via GCash. Clicking "I've Paid," copying a message template, or sending a screenshot does not automatically unlock access on the website. We independently verify each ₱400 transaction in our GCash account before sending the Google Drive access link via Facebook Messenger.
+            </p>
+
+            <h2 class="font-heading font-bold text-lg text-deepRose">3. Personal Use & Strict No-Sharing Policy</h2>
+            <p>
+              Your purchase grants you a <strong>single-user, non-transferable license</strong> to access and use the prompts and resources for your own personal or creator projects. Unless explicitly authorized in writing by the seller, you may <strong>not</strong>:
+            </p>
+            <ul class="list-disc pl-5 space-y-1">
+              <li>Share, forward, or publicly post the private Google Drive link with other people.</li>
+              <li>Resell, redistribute, repackage, or claim copyright ownership over the prompt collection or digital files.</li>
+            </ul>
+            <p>
+              Unauthorized link sharing or redistribution may result in revocation of folder access.
+            </p>
+
+            <h2 class="font-heading font-bold text-lg text-deepRose">4. Third-Party AI Tools & Affiliate Disclosure</h2>
+            <p>
+              External third-party AI tools, apps, or websites that you may choose to use alongside our prompts are independent services and may have their own separate pricing, subscriptions, or terms. Where our resources or pages contain affiliate links to external tools, we may earn a small commission at no additional cost to you.
+            </p>
+          </div>
+        </article>
+
+        <!-- REFUND POLICY CONTENT -->
+        <article id="legal-content-refund" class="coquette-card rounded-3xl p-7 sm:p-10 bg-white space-y-5 hidden">
+          <div class="border-b border-rosePink/50 pb-4">
+            <span class="text-xs font-bold uppercase tracking-wider text-hotPink">Fair & Transparent Digital Policy</span>
+            <h1 class="font-heading text-3xl sm:text-4xl font-bold text-deepRose mt-1">Refund Policy 🎀</h1>
+            <p class="text-xs text-boutiqueText/70 mt-1">Consistent with applicable Philippine consumer protection principles</p>
+          </div>
+
+          <div class="space-y-4 text-sm text-boutiqueText/90 leading-relaxed">
+            <h2 class="font-heading font-bold text-lg text-deepRose">1. Digital Product Nature & Access Delivery</h2>
+            <p>
+              <strong>The Girly AI Creator Vault (₱400)</strong> is a digital product delivered via a Google Drive access link after manual GCash verification. Because digital prompts and downloadable/viewable Google Drive resources cannot be "returned" once accessed or downloaded, <strong>completed orders where the Google Drive link has already been delivered are generally non-refundable</strong> for change of mind.
+            </p>
+
+            <h2 class="font-heading font-bold text-lg text-deepRose">2. When a Refund or Resolution Applies</h2>
+            <p>
+              In accordance with fair trade principles and applicable Philippine consumer protection laws (such as Republic Act No. 7394 / Consumer Act of the Philippines), we provide full assistance, replacement access, or a refund in the following verified situations:
+            </p>
+            <ul class="list-disc pl-5 space-y-1">
+              <li><strong>Duplicate Payment:</strong> If you accidentally sent ₱400 twice for the same order, we will refund the duplicate payment upon verifying both transactions in our GCash account.</li>
+              <li><strong>Non-Delivery or Unresolvable Technical Access Issue:</strong> If we verify your payment in our GCash account and are unable to provide working access to the advertised Google Drive collection after you contact our support team.</li>
+              <li><strong>Product Not as Described:</strong> If the delivered collection materially fails to match the advertised description on this website and we cannot remedy the issue.</li>
+            </ul>
+
+            <h2 class="font-heading font-bold text-lg text-deepRose">3. How to Request Support or Payment Review</h2>
+            <p>
+              If you cannot open your Google Drive link or have a payment concern, please message our official Facebook Messenger account with your name, GCash receipt screenshot, and reference number so we can assist you promptly.
+            </p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+  </main>
+
+  <!-- =========================================================================
+       13. COQUETTE BOUTIQUE FOOTER
+       ========================================================================= -->
+  <footer class="bg-babyPink border-t-2 border-rosePink text-deepRose mt-12">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 pb-8 border-b border-rosePink/60">
+        
+        <!-- Brand Column (5 cols) -->
+        <div class="md:col-span-5">
+          <button onclick="navigateToView('home')" class="font-heading font-bold text-2xl text-deepRose flex items-center gap-1.5 mb-2">
+            <span class="brand-name-display">Girly AI Club</span>
+            <span>♡</span>
+          </button>
+          <p class="font-script text-2xl text-hotPink mb-2">
+            Pretty prompts. Creative possibilities.
+          </p>
+          <p class="text-xs sm:text-sm text-boutiqueText/85 max-w-sm leading-relaxed">
+            Your pretty little corner of AI magic. Curated AI prompts, beginner-friendly guides, and included AI drama inspiration for ₱400 one-time payment.
+          </p>
+        </div>
+
+        <!-- Boutique Navigation (3 cols) -->
+        <div class="md:col-span-3">
+          <h3 class="font-heading font-bold text-base text-deepRose mb-3">Boutique Menu 🎀</h3>
+          <ul class="space-y-2 text-xs sm:text-sm text-boutiqueText/90">
+            <li><button onclick="navigateToSection('home', 'top')" class="hover:text-hotPink transition">Home</button></li>
+            <li><button onclick="navigateToSection('home', 'the-vault')" class="hover:text-hotPink transition">The AI Creator Vault</button></li>
+            <li><button onclick="navigateToSection('home', 'whats-inside')" class="hover:text-hotPink transition">What's Inside</button></li>
+            <li><button onclick="navigateToSection('home', 'about')" class="hover:text-hotPink transition">About</button></li>
+            <li><button onclick="navigateToSection('home', 'faq')" class="hover:text-hotPink transition">FAQ</button></li>
+            <li><button onclick="navigateToSection('home', 'contact')" class="hover:text-hotPink transition">Contact</button></li>
+            <li><button onclick="navigateToView('checkout')" class="font-semibold text-hotPink hover:text-deepRose transition">GCash Checkout (<span class="price-display">₱400</span>)</button></li>
+          </ul>
+        </div>
+
+        <!-- Legal & Transparency Links (4 cols) -->
+        <div class="md:col-span-4">
+          <h3 class="font-heading font-bold text-base text-deepRose mb-3">Legal & Transparency ✨</h3>
+          <ul class="space-y-2 text-xs sm:text-sm text-boutiqueText/90 mb-4">
+            <li><button onclick="openLegalPage('privacy')" class="hover:text-hotPink transition">Privacy Policy</button></li>
+            <li><button onclick="openLegalPage('terms')" class="hover:text-hotPink transition">Terms and Conditions</button></li>
+            <li><button onclick="openLegalPage('refund')" class="hover:text-hotPink transition">Refund Policy</button></li>
+          </ul>
+          <div id="affiliate-disclosure-box" class="bg-white/80 border border-rosePink rounded-xl p-3 text-[11px] text-boutiqueText/80 leading-relaxed">
+            <strong class="text-deepRose">Affiliate & Third-Party Disclosure:</strong> Some guides or external recommendations may include affiliate links at no extra cost to you. External AI tools are independent and may have separate pricing.
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Copyright & Seller Setup Trigger -->
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-boutiqueText/80">
+        <p>
+          © <span id="current-year">2026</span> <span class="brand-name-display font-semibold text-deepRose">Girly AI Club</span> ♡ All rights reserved.
+        </p>
+        <div class="flex items-center gap-3">
+          <button onclick="toggleSellerDrawer()" class="inline-flex items-center gap-1.5 bg-white hover:bg-blushPink text-deepRose border border-rosePink px-3.5 py-1.5 rounded-full font-semibold shadow-sm transition">
+            <span>⚙️ Seller Setup & Config Guide</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       FLOATING TOAST NOTIFICATION (REPLACES NATIVE ALERT)
+       ========================================================================= -->
+  <div id="coquette-toast" class="fixed bottom-5 right-5 z-50 hidden max-w-sm bg-white border-2 border-hotPink rounded-2xl p-4 shadow-coquetteHover transition-all duration-300">
+    <div class="flex items-start gap-3">
+      <span id="toast-icon" class="text-xl">💗</span>
+      <div class="flex-grow">
+        <p id="toast-title" class="font-bold text-deepRose text-sm">Notification</p>
+        <p id="toast-message" class="text-xs text-boutiqueText/90 mt-0.5 leading-relaxed"></p>
+      </div>
+      <button onclick="hideToast()" class="text-boutiqueText/50 hover:text-deepRose text-sm font-bold px-1">✕</button>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       SELLER CONFIGURATION & PUBLISHING DRAWER (FOR EASY OWNER CUSTOMIZATION)
+       ========================================================================= -->
+  <div id="seller-drawer-backdrop" onclick="toggleSellerDrawer()" class="fixed inset-0 bg-boutiqueText/40 backdrop-blur-xs z-50 hidden"></div>
+  <aside id="seller-drawer" class="fixed top-0 right-0 h-full w-full max-w-md bg-white border-l-2 border-rosePink z-50 shadow-2xl transform translate-x-full transition-transform duration-300 flex flex-col">
+    <div class="p-5 bg-babyPink border-b border-rosePink flex items-center justify-between">
+      <div>
+        <span class="text-[10px] font-bold uppercase tracking-widest text-hotPink block">Admin Preview & Setup</span>
+        <h2 class="font-heading font-bold text-xl text-deepRose">Seller Configuration 🎀</h2>
+      </div>
+      <button onclick="toggleSellerDrawer()" class="w-8 h-8 rounded-full bg-white border border-rosePink text-deepRose font-bold flex items-center justify-center hover:bg-blushPink">
+        ✕
+      </button>
+    </div>
+
+    <div class="p-5 overflow-y-auto flex-grow space-y-4 text-xs">
+      <div class="bg-blushPink border border-rosePink rounded-2xl p-3.5 text-boutiqueText leading-relaxed">
+        <p class="font-bold text-deepRose mb-1">💡 How to Customize & Publish:</p>
+        <p>
+          Test your links live below! To make changes permanent for your customers, update the <code class="bg-white px-1 rounded border border-rosePink">SITE_CONFIG</code> object near the top of <code class="bg-white px-1 rounded border border-rosePink">index.html</code> before hosting on Netlify, Vercel, or GitHub Pages.
+        </p>
+      </div>
+
+      <div class="space-y-3">
+        <div>
+          <label class="font-bold text-deepRose block mb-1">GCash Number</label>
+          <input id="cfg-gcash-number" type="text" class="w-full px-3 py-2 rounded-xl border border-rosePink bg-white text-boutiqueText font-mono" />
+        </div>
+        <div>
+          <label class="font-bold text-deepRose block mb-1">GCash Account Name</label>
+          <input id="cfg-gcash-name" type="text" class="w-full px-3 py-2 rounded-xl border border-rosePink bg-white text-boutiqueText" />
+        </div>
+        <div>
+          <label class="font-bold text-deepRose block mb-1">Product Price (PHP)</label>
+          <input id="cfg-price" type="number" class="w-full px-3 py-2 rounded-xl border border-rosePink bg-white text-boutiqueText" />
+        </div>
+        <div>
+          <label class="font-bold text-deepRose block mb-1">Official Facebook Messenger Link (m.me/...)</label>
+          <input id="cfg-messenger" type="url" placeholder="https://m.me/yourpage" class="w-full px-3 py-2 rounded-xl border border-rosePink bg-white text-boutiqueText" />
+        </div>
+        <div>
+          <label class="font-bold text-deepRose block mb-1">Facebook Page URL</label>
+          <input id="cfg-facebook" type="url" placeholder="https://facebook.com/yourpage" class="w-full px-3 py-2 rounded-xl border border-rosePink bg-white text-boutiqueText" />
+        </div>
+        <div>
+          <label class="font-bold text-deepRose block mb-1">TikTok Profile URL</label>
+          <input id="cfg-tiktok" type="url" placeholder="https://tiktok.com/@yourhandle" class="w-full px-3 py-2 rounded-xl border border-rosePink bg-white text-boutiqueText" />
+        </div>
+        <div>
+          <label class="font-bold text-deepRose block mb-1">Instagram Profile URL</label>
+          <input id="cfg-instagram" type="url" placeholder="https://instagram.com/yourhandle" class="w-full px-3 py-2 rounded-xl border border-rosePink bg-white text-boutiqueText" />
+        </div>
+        <div>
+          <label class="font-bold text-deepRose block mb-1">Creator Name</label>
+          <input id="cfg-creator-name" type="text" placeholder="Your Name" class="w-full px-3 py-2 rounded-xl border border-rosePink bg-white text-boutiqueText" />
+        </div>
+        <div>
+          <label class="font-bold text-deepRose block mb-1">Support Email</label>
+          <input id="cfg-support-email" type="email" placeholder="hello@girlyaiclub.com" class="w-full px-3 py-2 rounded-xl border border-rosePink bg-white text-boutiqueText" />
+        </div>
+      </div>
+
+      <div class="bg-emerald-50 border border-emerald-200 rounded-2xl p-3.5 text-emerald-900 leading-relaxed">
+        <p class="font-bold mb-1">🔒 Google Drive Link Protection:</p>
+        <p>
+          Your private Google Drive link is intentionally <strong>never</strong> stored in the website's public code so nobody can inspect-element and bypass payment. Send your Google Drive link manually inside Messenger after checking your GCash app!
+        </p>
+      </div>
+    </div>
+
+    <div class="p-4 bg-blushPink border-t border-rosePink flex gap-2">
+      <button onclick="applySellerConfig()" class="w-full btn-coquette-primary py-3 rounded-full font-semibold text-xs">
+        Apply Live Preview Changes 💗
+      </button>
+    </div>
+  </aside>
+
+  <!-- =========================================================================
+       APPLICATION JAVASCRIPT
+       ========================================================================= -->
+  <script>
+    /**
+     * Check if a SITE_CONFIG string is actually configured (not empty and not a placeholder)
+     */
+    function isConfigured(val) {
+      if (val === undefined || val === null) return false;
+      const str = String(val).trim();
+      if (!str) return false;
+      if (str.startsWith('[INSERT') || str.includes('INSERT YOUR')) return false;
+      return true;
+    }
+
+    /**
+     * Format currency price (e.g., ₱400)
+     */
+    function getFormattedPrice() {
+      return `₱${SITE_CONFIG.PRODUCT_PRICE}`;
+    }
+
+    /**
+     * FAQ Data (All 10 required questions & transparent answers)
+     */
+    const FAQ_ITEMS = [
+      {
+        q: "Q1: What do I get for ₱400?",
+        a: "You receive access to the AI prompt collection and the free AI drama resources specifically included in The Girly AI Creator Vault."
+      },
+      {
+        q: "Q2: Is this a one-time payment?",
+        a: "Yes. The advertised purchase is a one-time payment of ₱400, not a recurring subscription."
+      },
+      {
+        q: "Q3: How do I pay?",
+        a: "Send ₱400 to the GCash number displayed on the checkout page, then message your receipt through our official Facebook Messenger page."
+      },
+      {
+        q: "Q4: How do I receive my resources?",
+        a: "After we manually verify your payment, we will send your Google Drive access instructions through Messenger."
+      },
+      {
+        q: "Q5: Does sending my receipt automatically unlock access?",
+        a: "No. We need to independently verify that the payment was successfully received before providing access."
+      },
+      {
+        q: "Q6: Do I need experience with AI?",
+        a: "No advanced experience is required to explore the beginner-friendly resources. Individual AI tools may have their own learning requirements."
+      },
+      {
+        q: "Q7: Are the AI drama resources free?",
+        a: "The AI drama resources specifically included in the advertised bundle are included in your purchase. Other external services or products may require separate payment."
+      },
+      {
+        q: "Q8: What if I cannot open the Google Drive link?",
+        a: "Contact our official support account through Messenger so we can help resolve access issues."
+      },
+      {
+        q: "Q9: Can I get a refund?",
+        a: "Please review our Refund Policy for the applicable terms and conditions. You can click 'Refund Policy' in the footer below to read our full terms."
+      },
+      {
+        q: "Q10: Can I share my purchased resources with other people?",
+        a: "No. Your ₱400 purchase grants a personal, single-user license for your own creative use. Sharing, forwarding, reselling, or redistributing the private Google Drive link or included files with other people is not permitted unless explicitly authorized by Girly AI Club."
+      }
+    ];
+
+    /**
+     * Render FAQ Accordion
+     */
+    function renderFAQ() {
+      const container = document.getElementById('faq-accordion-container');
+      if (!container) return;
+
+      container.innerHTML = FAQ_ITEMS.map((item, idx) => `
+        <div class="coquette-card rounded-2xl bg-white overflow-hidden">
+          <button
+            onclick="toggleFaqItem(${idx})"
+            class="w-full px-6 py-4 text-left flex items-center justify-between gap-4 focus:outline-none hover:bg-blushPink/50 transition"
+            aria-expanded="${idx === 0 ? 'true' : 'false'}"
+            id="faq-btn-${idx}"
+          >
+            <span class="font-heading font-bold text-base sm:text-lg text-deepRose">${item.q}</span>
+            <span id="faq-icon-${idx}" class="w-7 h-7 rounded-full bg-babyPink border border-rosePink text-deepRose flex items-center justify-center flex-shrink-0 font-bold text-sm transition-transform duration-200 ${idx === 0 ? 'rotate-45' : ''}">
+              +
+            </span>
+          </button>
+          <div id="faq-panel-${idx}" class="${idx === 0 ? 'block' : 'hidden'} px-6 pb-5 pt-1 text-sm text-boutiqueText/90 leading-relaxed border-t border-babyPink">
+            ${item.a}
+          </div>
+        </div>
+      `).join('');
+    }
+
+    /**
+     * Toggle individual FAQ Accordion Item
+     */
+    function toggleFaqItem(index) {
+      const panel = document.getElementById(`faq-panel-${index}`);
+      const icon = document.getElementById(`faq-icon-${index}`);
+      const btn = document.getElementById(`faq-btn-${index}`);
+      if (!panel || !icon || !btn) return;
+
+      const isHidden = panel.classList.contains('hidden');
+      if (isHidden) {
+        panel.classList.remove('hidden');
+        icon.classList.add('rotate-45');
+        btn.setAttribute('aria-expanded', 'true');
+      } else {
+        panel.classList.add('hidden');
+        icon.classList.remove('rotate-45');
+        btn.setAttribute('aria-expanded', 'false');
+      }
+    }
+
+    /**
+     * Multi-View Navigation (Home, Checkout, Legal)
+     */
+    function navigateToView(viewName) {
+      const views = ['home', 'checkout', 'legal'];
+      views.forEach(v => {
+        const el = document.getElementById(`view-${v}`);
+        if (el) {
+          if (v === viewName) {
+            el.classList.remove('hidden');
+            el.classList.add('block');
+          } else {
+            el.classList.add('hidden');
+            el.classList.remove('block');
+          }
+        }
+      });
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    /**
+     * Navigate to a specific section on the Homepage
+     */
+    function navigateToSection(viewName, sectionId) {
+      navigateToView(viewName);
+      setTimeout(() => {
+        const target = document.getElementById(sectionId);
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }, 60);
+    }
+
+    /**
+     * Open specific Legal Page tab
+     */
+    function openLegalPage(pageKey) {
+      navigateToView('legal');
+      const pages = ['privacy', 'terms', 'refund'];
+      pages.forEach(p => {
+        const content = document.getElementById(`legal-content-${p}`);
+        const tab = document.getElementById(`tab-legal-${p}`);
+        if (content) {
+          content.classList.toggle('hidden', p !== pageKey);
+        }
+        if (tab) {
+          if (p === pageKey) {
+            tab.className = 'text-xs font-bold px-4 py-2 rounded-full bg-hotPink text-white border border-hotPink shadow-sm transition';
+          } else {
+            tab.className = 'text-xs font-semibold px-4 py-2 rounded-full bg-white text-deepRose border border-rosePink hover:bg-babyPink transition';
+          }
+        }
+      });
+    }
+
+    /**
+     * Mobile Hamburger Menu Toggle
+     */
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobile-menu');
+      const hamIcon = document.getElementById('hamburger-icon');
+      const closeIcon = document.getElementById('close-menu-icon');
+      const btn = document.getElementById('mobile-menu-btn');
+      if (!menu) return;
+
+      const isHidden = menu.classList.contains('hidden');
+      menu.classList.toggle('hidden', !isHidden);
+      hamIcon.classList.toggle('hidden', isHidden);
+      closeIcon.classList.toggle('hidden', !isHidden);
+      btn.setAttribute('aria-expanded', isHidden ? 'true' : 'false');
+    }
+
+    function closeMobileMenu() {
+      const menu = document.getElementById('mobile-menu');
+      const hamIcon = document.getElementById('hamburger-icon');
+      const closeIcon = document.getElementById('close-menu-icon');
+      const btn = document.getElementById('mobile-menu-btn');
+      if (menu && !menu.classList.contains('hidden')) {
+        menu.classList.add('hidden');
+        hamIcon.classList.remove('hidden');
+        closeIcon.classList.add('hidden');
+        btn.setAttribute('aria-expanded', 'false');
+      }
+    }
+
+    /**
+     * Reliable Clipboard Helper (Works in iFrames and modern browsers)
+     */
+    function copyTextToClipboard(text, onSuccess) {
+      try {
+        const textArea = document.createElement('textarea');
+        textArea.value = text;
+        textArea.style.position = 'fixed';
+        textArea.style.left = '-9999px';
+        textArea.style.top = '0';
+        document.body.appendChild(textArea);
+        textArea.focus();
+        textArea.select();
+        const successful = document.execCommand('copy');
+        document.body.removeChild(textArea);
+        if (successful && onSuccess) {
+          onSuccess();
+          return;
+        }
+      } catch (err) {
+        // Fallback to navigator.clipboard if execCommand fails
+      }
+
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(() => {
+          if (onSuccess) onSuccess();
+        });
+      }
+    }
+
+    /**
+     * Copy GCash Number Handler
+     */
+    function copyGCashNumber() {
+      if (!isConfigured(SITE_CONFIG.GCASH_NUMBER)) {
+        showToast('Setup Required', 'Please configure your GCash number in Seller Settings first.', '⚙️');
+        return;
+      }
+
+      const cleanNumber = SITE_CONFIG.GCASH_NUMBER.trim();
+      copyTextToClipboard(cleanNumber, () => {
+        const feedback = document.getElementById('copy-gcash-feedback');
+        if (feedback) {
+          feedback.classList.remove('hidden');
+          setTimeout(() => feedback.classList.add('hidden'), 4000);
+        }
+        showToast('GCash number copied! 💗', `Copied ${cleanNumber} to your clipboard.`, '🎀');
+      });
+    }
+
+    /**
+     * Update Suggested Message Template when buyer types in optional helper fields
+     */
+    function updateSuggestedMessage() {
+      const nameInput = document.getElementById('helper-buyer-name');
+      const refInput = document.getElementById('helper-ref-num');
+      const msgBox = document.getElementById('suggested-message-box');
+      if (!msgBox) return;
+
+      const buyerName = (nameInput && nameInput.value.trim()) ? nameInput.value.trim() : '[YOUR NAME]';
+      const refNum = (refInput && refInput.value.trim()) ? refInput.value.trim() : '[REFERENCE NUMBER]';
+      const priceStr = getFormattedPrice();
+
+      msgBox.textContent = `Hi, ${SITE_CONFIG.BRAND_NAME}! 🎀
+I've sent my ${priceStr} payment for ${SITE_CONFIG.PRODUCT_NAME}.
+My name: ${buyerName}
+GCash transaction reference: ${refNum}
+I'm sending my payment receipt for verification. Please let me know once my payment is confirmed and my Google Drive access is ready.
+Thank you! 💗`;
+    }
+
+    /**
+     * Copy Suggested Messenger Message Handler
+     */
+    function copySuggestedMessage() {
+      const msgBox = document.getElementById('suggested-message-box');
+      if (!msgBox) return;
+
+      copyTextToClipboard(msgBox.textContent, () => {
+        const feedback = document.getElementById('copy-message-feedback');
+        if (feedback) {
+          feedback.classList.remove('hidden');
+          setTimeout(() => feedback.classList.add('hidden'), 5000);
+        }
+        showToast('Message copied! 💌', 'Paste it in Messenger and attach your GCash receipt screenshot.', '💗');
+      });
+    }
+
+    /**
+     * Handle Messenger Checkout Button Click
+     */
+    function handleMessengerCheckoutClick(event) {
+      if (!isConfigured(SITE_CONFIG.MESSENGER_URL)) {
+        event.preventDefault();
+        showToast(
+          'Messenger link coming soon.',
+          'The seller is finishing setting up the official Facebook Messenger link. (Seller: Click ⚙️ Seller Setup to configure MESSENGER_URL).',
+          '💌'
+        );
+        return false;
+      }
+      // When configured, allow normal user-initiated link navigation in new tab
+      showToast(
+        'Opening Messenger... 🎀',
+        'Remember to attach your GCash payment receipt screenshot inside Messenger for manual verification!',
+        '💌'
+      );
+      return true;
+    }
+
+    /**
+     * Handle Social / Support Button Clicks
+     */
+    function handleSocialClick(configKey, label) {
+      const url = SITE_CONFIG[configKey];
+      if (!isConfigured(url)) {
+        showToast(
+          `${label} Coming Soon 🌸`,
+          `Our official ${label} link is being updated. (Seller: Configure ${configKey} in ⚙️ Seller Setup).`,
+          '🎀'
+        );
+        return;
+      }
+      window.open(url, '_blank', 'noopener,noreferrer');
+    }
+
+    /**
+     * Show Custom Coquette Toast Notification
+     */
+    let toastTimer = null;
+    function showToast(title, message, icon = '💗') {
+      const toast = document.getElementById('coquette-toast');
+      const titleEl = document.getElementById('toast-title');
+      const msgEl = document.getElementById('toast-message');
+      const iconEl = document.getElementById('toast-icon');
+      if (!toast) return;
+
+      titleEl.textContent = title;
+      msgEl.textContent = message;
+      iconEl.textContent = icon;
+      toast.classList.remove('hidden');
+
+      if (toastTimer) clearTimeout(toastTimer);
+      toastTimer = setTimeout(() => {
+        hideToast();
+      }, 5000);
+    }
+
+    function hideToast() {
+      const toast = document.getElementById('coquette-toast');
+      if (toast) toast.classList.add('hidden');
+    }
+
+    /**
+     * Sync UI with SITE_CONFIG values
+     */
+    function syncUIWithConfig() {
+      // Brand Name & Product Name
+      document.querySelectorAll('.brand-name-display').forEach(el => {
+        el.textContent = SITE_CONFIG.BRAND_NAME;
+      });
+      document.querySelectorAll('.product-name-display').forEach(el => {
+        el.textContent = SITE_CONFIG.PRODUCT_NAME;
+      });
+
+      // Product Price
+      const priceText = getFormattedPrice();
+      document.querySelectorAll('.price-display').forEach(el => {
+        el.textContent = priceText;
+      });
+
+      // GCash Number & Account Name
+      const gcashNumEl = document.getElementById('gcash-number-display');
+      const gcashNameEl = document.getElementById('gcash-name-display');
+      const inlineNumEl = document.getElementById('inline-gcash-num');
+      const inlineNameEl = document.getElementById('inline-gcash-name');
+      const copyGcashBtn = document.getElementById('copy-gcash-btn');
+      const copyGcashBtnText = document.getElementById('copy-gcash-btn-text');
+
+      if (isConfigured(SITE_CONFIG.GCASH_NUMBER)) {
+        if (gcashNumEl) gcashNumEl.textContent = SITE_CONFIG.GCASH_NUMBER;
+        if (inlineNumEl) inlineNumEl.textContent = SITE_CONFIG.GCASH_NUMBER;
+        if (copyGcashBtn) {
+          copyGcashBtn.disabled = false;
+          copyGcashBtn.classList.remove('opacity-50', 'cursor-not-allowed');
+        }
+        if (copyGcashBtnText) copyGcashBtnText.textContent = 'COPY GCASH NUMBER';
+      } else {
+        if (gcashNumEl) gcashNumEl.textContent = 'GCash number setup pending';
+        if (inlineNumEl) inlineNumEl.textContent = 'the GCash number above';
+        if (copyGcashBtn) {
+          copyGcashBtn.disabled = true;
+          copyGcashBtn.classList.add('opacity-50', 'cursor-not-allowed');
+        }
+        if (copyGcashBtnText) copyGcashBtnText.textContent = 'GCASH NUMBER NOT YET CONFIGURED';
+      }
+
+      if (isConfigured(SITE_CONFIG.GCASH_ACCOUNT_NAME)) {
+        if (gcashNameEl) gcashNameEl.textContent = SITE_CONFIG.GCASH_ACCOUNT_NAME;
+        if (inlineNameEl) inlineNameEl.textContent = SITE_CONFIG.GCASH_ACCOUNT_NAME;
+      } else {
+        if (gcashNameEl) gcashNameEl.textContent = 'Account name setup pending';
+        if (inlineNameEl) inlineNameEl.textContent = 'the recipient account name';
+      }
+
+      // Messenger Checkout Link State
+      const messengerLink = document.getElementById('messenger-checkout-link');
+      const messengerNotice = document.getElementById('messenger-coming-soon-notice');
+      if (isConfigured(SITE_CONFIG.MESSENGER_URL)) {
+        if (messengerLink) {
+          messengerLink.href = SITE_CONFIG.MESSENGER_URL;
+          messengerLink.target = '_blank';
+          messengerLink.rel = 'noopener noreferrer';
+        }
+        if (messengerNotice) messengerNotice.classList.add('hidden');
+      } else {
+        if (messengerLink) {
+          messengerLink.href = '#';
+          messengerLink.removeAttribute('target');
+        }
+        if (messengerNotice) messengerNotice.classList.remove('hidden');
+      }
+
+      // Creator Profile Info
+      const creatorNameEl = document.getElementById('creator-name-display');
+      const creatorRoleEl = document.getElementById('creator-role-display');
+      const creatorBioEl = document.getElementById('creator-bio-display');
+      const creatorPhotoImg = document.getElementById('creator-photo-img');
+      const creatorAvatarSvg = document.getElementById('creator-avatar-svg');
+
+      if (creatorNameEl) {
+        creatorNameEl.textContent = isConfigured(SITE_CONFIG.CREATOR_NAME)
+          ? SITE_CONFIG.CREATOR_NAME
+          : `${SITE_CONFIG.BRAND_NAME} Creator`;
+      }
+      if (creatorRoleEl) creatorRoleEl.textContent = SITE_CONFIG.CREATOR_ROLE || 'Founder & AI Prompt Curator';
+      if (creatorBioEl && isConfigured(SITE_CONFIG.CREATOR_BIO)) {
+        creatorBioEl.textContent = SITE_CONFIG.CREATOR_BIO;
+      }
+      if (creatorPhotoImg && creatorAvatarSvg) {
+        if (isConfigured(SITE_CONFIG.CREATOR_PHOTO_URL)) {
+          creatorPhotoImg.src = SITE_CONFIG.CREATOR_PHOTO_URL;
+          creatorPhotoImg.classList.remove('hidden');
+          creatorAvatarSvg.classList.add('hidden');
+        } else {
+          creatorPhotoImg.classList.add('hidden');
+          creatorAvatarSvg.classList.remove('hidden');
+        }
+      }
+
+      // Social Link Badges
+      ['MESSENGER_URL', 'FACEBOOK_URL', 'TIKTOK_URL', 'INSTAGRAM_URL'].forEach(key => {
+        const configured = isConfigured(SITE_CONFIG[key]);
+        document.querySelectorAll(`[data-config-badge="${key}"]`).forEach(badge => {
+          badge.textContent = configured ? 'Open ↗' : 'Coming Soon';
+        });
+      });
+
+      // Support Email
+      const emailLine = document.getElementById('support-email-line');
+      if (emailLine) {
+        if (isConfigured(SITE_CONFIG.SUPPORT_EMAIL)) {
+          emailLine.textContent = `Official Support Email: ${SITE_CONFIG.SUPPORT_EMAIL}`;
+        } else {
+          emailLine.textContent = 'For fastest assistance, message us on our official Facebook page.';
+        }
+      }
+
+      // Update Suggested Message Template
+      updateSuggestedMessage();
+    }
+
+    /**
+     * Toggle Seller Setup Drawer & Populate Inputs
+     */
+    function toggleSellerDrawer() {
+      const drawer = document.getElementById('seller-drawer');
+      const backdrop = document.getElementById('seller-drawer-backdrop');
+      if (!drawer || !backdrop) return;
+
+      const isOpen = !drawer.classList.contains('translate-x-full');
+      if (isOpen) {
+        drawer.classList.add('translate-x-full');
+        backdrop.classList.add('hidden');
+      } else {
+        // Populate current values into form
+        document.getElementById('cfg-gcash-number').value = isConfigured(SITE_CONFIG.GCASH_NUMBER) ? SITE_CONFIG.GCASH_NUMBER : '';
+        document.getElementById('cfg-gcash-name').value = isConfigured(SITE_CONFIG.GCASH_ACCOUNT_NAME) ? SITE_CONFIG.GCASH_ACCOUNT_NAME : '';
+        document.getElementById('cfg-price').value = SITE_CONFIG.PRODUCT_PRICE;
+        document.getElementById('cfg-messenger').value = isConfigured(SITE_CONFIG.MESSENGER_URL) ? SITE_CONFIG.MESSENGER_URL : '';
+        document.getElementById('cfg-facebook').value = isConfigured(SITE_CONFIG.FACEBOOK_URL) ? SITE_CONFIG.FACEBOOK_URL : '';
+        document.getElementById('cfg-tiktok').value = isConfigured(SITE_CONFIG.TIKTOK_URL) ? SITE_CONFIG.TIKTOK_URL : '';
+        document.getElementById('cfg-instagram').value = isConfigured(SITE_CONFIG.INSTAGRAM_URL) ? SITE_CONFIG.INSTAGRAM_URL : '';
+        document.getElementById('cfg-creator-name').value = isConfigured(SITE_CONFIG.CREATOR_NAME) ? SITE_CONFIG.CREATOR_NAME : '';
+        document.getElementById('cfg-support-email').value = isConfigured(SITE_CONFIG.SUPPORT_EMAIL) ? SITE_CONFIG.SUPPORT_EMAIL : '';
+
+        drawer.classList.remove('translate-x-full');
+        backdrop.classList.remove('hidden');
+      }
+    }
+
+    /**
+     * Apply Live Preview Changes from Seller Drawer
+     */
+    function applySellerConfig() {
+      const gcashNum = document.getElementById('cfg-gcash-number').value.trim();
+      const gcashName = document.getElementById('cfg-gcash-name').value.trim();
+      const priceVal = parseInt(document.getElementById('cfg-price').value, 10);
+      const messengerVal = document.getElementById('cfg-messenger').value.trim();
+      const fbVal = document.getElementById('cfg-facebook').value.trim();
+      const tiktokVal = document.getElementById('cfg-tiktok').value.trim();
+      const igVal = document.getElementById('cfg-instagram').value.trim();
+      const creatorVal = document.getElementById('cfg-creator-name').value.trim();
+      const emailVal = document.getElementById('cfg-support-email').value.trim();
+
+      SITE_CONFIG.GCASH_NUMBER = gcashNum || '[INSERT YOUR GCASH NUMBER]';
+      SITE_CONFIG.GCASH_ACCOUNT_NAME = gcashName || '[INSERT YOUR GCASH ACCOUNT NAME]';
+      if (!isNaN(priceVal) && priceVal > 0) SITE_CONFIG.PRODUCT_PRICE = priceVal;
+      SITE_CONFIG.MESSENGER_URL = messengerVal || '[INSERT YOUR OFFICIAL MESSENGER LINK]';
+      SITE_CONFIG.FACEBOOK_URL = fbVal || '[INSERT YOUR FACEBOOK PAGE]';
+      SITE_CONFIG.TIKTOK_URL = tiktokVal || '[INSERT YOUR TIKTOK PROFILE]';
+      SITE_CONFIG.INSTAGRAM_URL = igVal || '[INSERT YOUR INSTAGRAM PROFILE]';
+      SITE_CONFIG.CREATOR_NAME = creatorVal || '[INSERT CREATOR NAME]';
+      SITE_CONFIG.SUPPORT_EMAIL = emailVal || '[INSERT YOUR SUPPORT EMAIL]';
+
+      syncUIWithConfig();
+      toggleSellerDrawer();
+      showToast('Seller Settings Updated! 🎀', 'Your live preview has been updated with your new details.', '✨');
+    }
+
+    /**
+     * Initialize Website on Load
+     */
+    window.addEventListener('DOMContentLoaded', () => {
+      const yearEl = document.getElementById('current-year');
+      if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+      renderFAQ();
+      syncUIWithConfig();
+    });
+  </script>
+</body>
+</html>
